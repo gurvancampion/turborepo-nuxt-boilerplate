@@ -1,6 +1,6 @@
 # Turborepo starter
 
-This is an official pnpm starter turborepo.
+This is a monorepo with Nuxt, Histoire & VitePress.
 
 ## What's inside?
 
@@ -8,10 +8,10 @@ This turborepo uses [pnpm](https://pnpm.io) as a package manager. It includes th
 
 ### Apps and Packages
 
-- `docs`: a [Next.js](https://nextjs.org) app
-- `web`: another [Next.js](https://nextjs.org) app
-- `ui`: a stub React component library shared by both `web` and `docs` applications
-- `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
+- `web`: a [Nuxt.js](https://nuxtjs.org) app
+- `docs`: a [VitePress](https://vitepress.vuejs.org/) app
+- `ui`: a stub Nuxt component library with [Histoire](https://histoire.dev/)
+- `config`: `eslint` configuration (using [@antfu/eslint-config](https://github.com/antfu/eslint-config))
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
 
 Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
@@ -22,24 +22,38 @@ This turborepo has some additional tools already setup for you:
 
 - [TypeScript](https://www.typescriptlang.org/) for static type checking
 - [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-
-### Build
-
-To build all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm run build
-```
 
 ### Develop
 
 To develop all apps and packages, run the following command:
 
 ```
-cd my-turborepo
 pnpm run dev
+```
+
+### Lint
+
+To check & fix linter through all apps and packages, run the following command:
+
+```
+pnpm run lint
+pnpm run lint:fix
+```
+
+### Test
+
+To run tests through all apps and packages, run the following command:
+
+```
+pnpm run test
+```
+
+### Build
+
+To build all apps and packages, run the following command:
+
+```
+pnpm run build
 ```
 
 ### Remote Caching
@@ -49,7 +63,6 @@ Turborepo can use a technique known as [Remote Caching](https://turborepo.org/do
 By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
 
 ```
-cd my-turborepo
 pnpm dlx turbo login
 ```
 

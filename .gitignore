@@ -31,3 +31,15 @@ yarn-error.log*
 
 # turbo
 .turbo
+
+# IDEs
+.idea
+
+# nuxt
+.output
+
+# histoire
+.histoire
+
+# vitepress
+**/.vitepress/dist/**

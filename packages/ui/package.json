@@ -1,19 +1,23 @@
 {
-  "name": "ui",
+  "name": "@myturborepo/ui",
   "version": "0.0.0",
-  "main": "./index.tsx",
-  "types": "./index.tsx",
-  "license": "MIT",
+  "main": "nuxt.mjs",
+  "private": true,
   "scripts": {
-    "lint": "eslint *.ts*"
+    "dev": "histoire dev",
+    "build": "histoire build",
+    "preview": "histoire preview",
+    "test": "vitest run --config vitest.config.ts --coverage"
   },
   "devDependencies": {
-    "@types/react": "^18.0.17",
-    "@types/react-dom": "^18.0.6",
-    "eslint": "^7.32.0",
-    "eslint-config-custom": "workspace:*",
-    "react": "^18.2.0",
     "tsconfig": "workspace:*",
-    "typescript": "^4.5.2"
+    "@histoire/plugin-vue": "^0.10.7",
+    "@vitejs/plugin-vue": "^3.1.0",
+    "@vitest/coverage-c8": "^0.23.4",
+    "@vue/test-utils": "^2.1.0",
+    "c8": "^7.12.0",
+    "histoire": "^0.10.7",
+    "jsdom": "^20.0.0",
+    "vitest": "^0.23.4"
   }
 }
