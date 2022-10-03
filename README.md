@@ -1,6 +1,6 @@
 # Turborepo starter
 
-This is a monorepo with Nuxt, Histoire & VitePress.
+This is a monorepo with Nuxt, Histoire, VitePress & Adonis.
 
 ## What's inside?
 
@@ -10,6 +10,7 @@ This turborepo uses [pnpm](https://pnpm.io) as a package manager. It includes th
 
 - `web`: a [Nuxt.js](https://nuxtjs.org) app
 - `docs`: a [VitePress](https://vitepress.vuejs.org/) app
+- `api`: an [Adonis.js](https://https://adonisjs.com/) api
 - `ui`: a stub Nuxt component library with [Histoire](https://histoire.dev/)
 - `config`: `eslint` configuration (using [@antfu/eslint-config](https://github.com/antfu/eslint-config))
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
@@ -22,6 +23,11 @@ This turborepo has some additional tools already setup for you:
 
 - [TypeScript](https://www.typescriptlang.org/) for static type checking
 - [ESLint](https://eslint.org/) for code linting
+
+### Setup
+
+Install all dependencies by running `pnpm i`.
+Copy environment variables in the api folder with `cp .env.example .env`
 
 ### Develop
 
