@@ -26,7 +26,11 @@ This turborepo has some additional tools already setup for you:
 
 ### Setup
 
-Install all dependencies by running `pnpm i`.
+To install all dependencies, run the following command:
+
+```
+pnpm install --shamefully-hoist
+```
 Copy environment variables in the api folder with `cp .env.example .env`
 
 ### Develop

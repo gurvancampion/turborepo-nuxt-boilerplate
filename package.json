@@ -1,5 +1,5 @@
 {
-  "name": "turborepo-nuxt-adonis-boilerplate",
+  "name": "turborepo-nuxt-boilerplate",
   "version": "0.0.0",
   "private": true,
   "workspaces": [
@@ -14,7 +14,7 @@
     "test": "turbo run test"
   },
   "devDependencies": {
-    "eslint-config-custom": "workspace:*",
+    "@myturborepo/eslint-config-custom": "workspace:*",
     "turbo": "latest"
   },
   "engines": {
