@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "nuxt": "3.0.0-rc.11",
-    "tsconfig": "workspace:*",
+    "@myturborepo/tsconfig": "workspace:*",
     "@myturborepo/ui": "workspace:*"
   }
 }

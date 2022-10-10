@@ -1,5 +1,5 @@
 {
-  "extends": "tsconfig/histoire.json",
+  "extends": "@myturborepo/tsconfig/histoire.json",
   "include": [
     "env.d.ts",
     "./**/*",
