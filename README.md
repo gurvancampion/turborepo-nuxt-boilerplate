@@ -1,6 +1,6 @@
 # Turborepo starter
 
-This is a monorepo with Nuxt, Histoire & VitePress.
+This is a monorepo with Nuxt, Histoire, VitePress & Unocss.
 
 ## What's inside?
 
