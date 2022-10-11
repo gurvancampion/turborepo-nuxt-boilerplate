@@ -1,3 +1,4 @@
+/// <reference types="vitest" />
 import vue from '@vitejs/plugin-vue'
 import Unocss from 'unocss/vite'
 import { defineConfig } from 'vite'
@@ -14,4 +15,10 @@ export default defineConfig({
       shortcuts,
     }),
   ],
+  test: {
+    reporters: ['verbose'],
+    include: ['tests/**/*.test.ts'],
+    globals: true,
+    environment: 'jsdom',
+  },
 })

@@ -7,10 +7,11 @@
     "dev": "histoire dev",
     "build": "histoire build",
     "preview": "histoire preview",
-    "test": "vitest run --config vitest.config.ts --coverage"
+    "test": "vitest run --coverage"
   },
   "devDependencies": {
     "@histoire/plugin-vue": "^0.11.2",
+    "@iconify-json/bx": "^1.1.4",
     "@myturborepo/tsconfig": "workspace:*",
     "@vitejs/plugin-vue": "^3.1.0",
     "@vitest/coverage-c8": "^0.23.4",
@@ -21,5 +22,8 @@
     "unocss": "^0.45.26",
     "vite": "^3.1.7",
     "vitest": "^0.23.4"
+  },
+  "dependencies": {
+    "anu-vue": "^0.9.1"
   }
 }
