@@ -1,12 +1,16 @@
 <script lang="ts" setup>
 import { onMounted } from 'vue'
 
-defineProps<{
-  disabled?: boolean
-}>()
-defineEmits<{
-  (e: 'submit', value: string): void
-}>()
+// https://anu-vue.netlify.app/guide/components/button.html
+withDefaults(defineProps<{
+  color?: 'primary' | 'success' | 'info' | 'warning' | 'danger'
+  variant?: 'fill' | 'outlined' | 'light' | 'text'
+  icon?: string
+  appendIcon?: string
+}>(), {
+  color: 'primary',
+  variant: 'fill',
+})
 
 onMounted(() => {
   // eslint-disable-next-line no-console
@@ -15,7 +19,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <button class="btn" :disabled="disabled" @click="$emit('submit')">
+  <ABtn v-bind="$props">
     <slot>Button</slot>
-  </button>
+  </ABtn>
 </template>

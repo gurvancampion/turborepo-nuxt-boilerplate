@@ -2,7 +2,11 @@
   "name": "@myturborepo/common",
   "private": true,
   "devDependencies": {
+    "@myturborepo/tsconfig": "workspace:*",
     "typescript": "^4.7.4",
-    "@myturborepo/tsconfig": "workspace:*"
+    "unocss": "^0.45.26"
+  },
+  "dependencies": {
+    "anu-vue": "^0.9.1"
   }
 }

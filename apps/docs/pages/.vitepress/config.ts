@@ -1,9 +1,8 @@
+import { presetIcons, presetUno } from 'unocss'
 import Unocss from 'unocss/vite'
+import Components from 'unplugin-vue-components/vite'
+import { AnuComponentResolver, presetCore, presetThemeDefault } from 'anu-vue'
 import { defineConfig } from 'vitepress'
-// Workaround using relative path:
-// https://github.com/vitejs/vite/issues/5370
-// https://github.com/vitejs/vite/issues/9202
-import { shortcuts } from '../../../../packages/common/unocss'
 
 export default defineConfig({
   title: 'VitePress',
@@ -28,7 +27,27 @@ export default defineConfig({
   vite: {
     plugins: [
       Unocss({
-        shortcuts,
+        presets: [
+          presetUno(),
+          presetIcons({
+            scale: 1.2,
+            extraProperties: {
+              'height': '1.5em',
+              'flex-shrink': '0',
+              'display': 'inline-block',
+            },
+          }),
+
+          // anu-vue presets
+          presetCore(),
+          presetThemeDefault(),
+        ],
+        include: [/.*\/anu-vue\.js(.*)?$/, './**/*.vue', './**/*.md'],
+      }),
+      Components({
+        resolvers: [
+          AnuComponentResolver(),
+        ],
       }),
     ],
   },

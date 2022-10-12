@@ -1,6 +1,7 @@
 {
   "extends": "@myturborepo/tsconfig/histoire.json",
   "include": [
+    "components.d.ts",
     "env.d.ts",
     "./**/*",
     "./**/*.vue"

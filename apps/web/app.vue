@@ -1,5 +1,5 @@
 <template>
   <div>
-    <MyTurborepoButton />
+    <MyTurborepoButton color="success" icon="i-bx-star" />
   </div>
 </template>

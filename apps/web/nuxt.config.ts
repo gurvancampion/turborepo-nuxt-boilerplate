@@ -1,13 +1,23 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
-import { shortcuts } from '@myturborepo/common/unocss'
+import Unocss from 'unocss/vite'
+import Components from 'unplugin-vue-components/vite'
+import { AnuComponentResolver } from 'anu-vue'
+import anuConfig from '@myturborepo/common/anu.config'
 
 export default defineNuxtConfig({
   modules: [
-    '@unocss/nuxt',
     '@myturborepo/ui',
   ],
-  unocss: {
-    uno: true,
-    shortcuts,
+  vite: {
+    plugins: [
+      Unocss({
+        ...anuConfig,
+      }),
+      Components({
+        resolvers: [
+          AnuComponentResolver(),
+        ],
+      }),
+    ],
   },
 })

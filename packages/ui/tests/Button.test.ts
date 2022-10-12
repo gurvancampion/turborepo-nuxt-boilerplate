@@ -8,23 +8,22 @@ describe('Button', () => {
     expect(wrapper).toBeDefined()
   })
 
-  it('is disabled', () => {
-    const wrapper = mount(Button, {
-      props: {
-        disabled: true,
-      },
-    })
-
-    const button = wrapper.find('button')
-    expect(button.element.disabled).toBe(true)
+  it('has class', () => {
+    const wrapper = mount(Button)
+    expect(wrapper.classes()).toContain('a-btn')
   })
 
-  it('has been clicked and event emitted', () => {
-    const wrapper = mount(Button)
-    const button = wrapper.find('button')
-    button.trigger('click')
+  it('has icon', () => {
+    const icon = 'i-bx-star'
+    const wrapper = mount(Button, {
+      props: {
+        icon,
+      },
+    })
+    const iconEl = wrapper.find('i')
 
-    expect(wrapper.emitted('submit')).toBeTruthy()
+    expect(wrapper.find('i')).toBeDefined()
+    expect(iconEl.classes()).toContain(icon)
   })
 
   it('has a slot', () => {
@@ -35,10 +34,5 @@ describe('Button', () => {
     })
 
     expect(wrapper.html()).toContain('Submit test')
-  })
-
-  it('has class', () => {
-    const wrapper = mount(Button)
-    expect(wrapper.classes()).toContain('btn')
   })
 })
