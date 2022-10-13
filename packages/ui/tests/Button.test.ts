@@ -36,4 +36,9 @@ describe('Button', () => {
 
     expect(wrapper.html()).toContain('Submit test')
   })
+
+  it('has class', () => {
+    const wrapper = mount(Button)
+    expect(wrapper.classes()).toContain('btn-blue')
+  })
 })
