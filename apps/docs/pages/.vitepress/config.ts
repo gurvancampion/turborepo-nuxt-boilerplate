@@ -1,4 +1,6 @@
 import { defineConfig } from 'vitepress'
+import Components from 'unplugin-vue-components/vite'
+import { HeadlessUiResolver } from 'unplugin-vue-components/resolvers'
 
 export default defineConfig({
   title: 'VitePress',
@@ -18,6 +20,11 @@ export default defineConfig({
           { text: 'Getting started', link: '/getting-started' },
         ],
       },
+    ],
+  },
+  vite: {
+    plugins: [
+      Components({ resolvers: [HeadlessUiResolver()] }),
     ],
   },
 })

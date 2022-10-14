@@ -12,35 +12,47 @@ importers:
 
   apps/docs:
     specifiers:
+      '@headlessui/vue': ^1.7.3
+      '@heroicons/vue': ^2.0.12
       '@myturborepo/tailwind-preset': workspace:*
       '@myturborepo/ui': workspace:*
       autoprefixer: ^10.4.12
       postcss: ^8.4.18
       tailwindcss: ^3.1.8
-      vitepress: 1.0.0-alpha.17
+      unplugin-vue-components: ^0.22.8
+      vitepress: 1.0.0-alpha.20
       vue: ^3.2.40
     devDependencies:
+      '@headlessui/vue': 1.7.3_vue@3.2.40
+      '@heroicons/vue': 2.0.12_vue@3.2.40
       '@myturborepo/tailwind-preset': link:../../packages/tailwind-preset
       '@myturborepo/ui': link:../../packages/ui
       autoprefixer: 10.4.12_postcss@8.4.18
       postcss: 8.4.18
       tailwindcss: 3.1.8_postcss@8.4.18
-      vitepress: 1.0.0-alpha.17_tbpndr44ulefs3hehwpi2mkf2y
+      unplugin-vue-components: 0.22.8_vue@3.2.40
+      vitepress: 1.0.0-alpha.20_tbpndr44ulefs3hehwpi2mkf2y
       vue: 3.2.40
 
   apps/web:
     specifiers:
+      '@headlessui/vue': ^1.7.3
+      '@heroicons/vue': ^2.0.12
       '@myturborepo/tailwind-preset': workspace:*
       '@myturborepo/tsconfig': workspace:*
       '@myturborepo/ui': workspace:*
       '@nuxtjs/tailwindcss': ^5.3.5
       nuxt: 3.0.0-rc.11
+      unplugin-vue-components: ^0.22.8
     devDependencies:
+      '@headlessui/vue': 1.7.3_vue@3.2.40
+      '@heroicons/vue': 2.0.12_vue@3.2.40
       '@myturborepo/tailwind-preset': link:../../packages/tailwind-preset
       '@myturborepo/tsconfig': link:../../packages/tsconfig
       '@myturborepo/ui': link:../../packages/ui
       '@nuxtjs/tailwindcss': 5.3.5_webpack@5.74.0
       nuxt: 3.0.0-rc.11
+      unplugin-vue-components: 0.22.8_vue@3.2.40
 
   packages/eslint-config-custom:
     specifiers:
@@ -74,6 +86,8 @@ importers:
 
   packages/ui:
     specifiers:
+      '@headlessui/vue': ^1.7.3
+      '@heroicons/vue': ^2.0.12
       '@histoire/plugin-vue': ^0.11.2
       '@myturborepo/tailwind-preset': workspace:*
       '@myturborepo/tsconfig': workspace:*
@@ -86,8 +100,11 @@ importers:
       jsdom: ^20.0.0
       postcss: ^8.4.18
       tailwindcss: ^3.1.8
+      unplugin-vue-components: ^0.22.8
       vitest: ^0.23.4
     devDependencies:
+      '@headlessui/vue': 1.7.3_vue@3.2.40
+      '@heroicons/vue': 2.0.12_vue@3.2.40
       '@histoire/plugin-vue': 0.11.3_dikb3vs7ed5ognpruvahkc2zlq
       '@myturborepo/tailwind-preset': link:../tailwind-preset
       '@myturborepo/tsconfig': link:../tsconfig
@@ -100,6 +117,7 @@ importers:
       jsdom: 20.0.1
       postcss: 8.4.18
       tailwindcss: 3.1.8_postcss@8.4.18
+      unplugin-vue-components: 0.22.8_vue@3.2.40
       vitest: 0.23.4_jsdom@20.0.1
 
 packages:
@@ -307,6 +325,10 @@ packages:
       - supports-color
       - typescript
     dev: false
+
+  /@antfu/utils/0.5.2:
+    resolution: {integrity: sha512-CQkeV+oJxUazwjlHD0/3ZD08QWKuGQkhnrKo3e6ly5pd48VUpXbb77q0xMU4+vc2CkJnDS02Eq/M9ugyX20XZA==}
+    dev: true
 
   /@babel/code-frame/7.18.6:
     resolution: {integrity: sha512-TDCmlK5eOvH+eH7cdAFlNXeVJqWIQ7gW9tY1GJIpUtFb6CmjVyq2VM3u71bOyR8CRihcCgMUYoDNyLXao3+70Q==}
@@ -752,6 +774,23 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: false
+
+  /@headlessui/vue/1.7.3_vue@3.2.40:
+    resolution: {integrity: sha512-Is4iakKts9u9E0+jEZNzoJpBjwq2SamwEIoEl2RlyYSu6Zco536GsPXaQEfg/o7Eyc1GUUlcL+dJd4Rt7qyf7A==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      vue: ^3.2.0
+    dependencies:
+      vue: 3.2.40
+    dev: true
+
+  /@heroicons/vue/2.0.12_vue@3.2.40:
+    resolution: {integrity: sha512-ypuQl/Wei7BoShO65AdRVikXDaSt6hJBRuKs2pVd/6HvxfEz18oXraH+J5G/QPIwObMEVhMb6nkOs9l3WZv/gA==}
+    peerDependencies:
+      vue: '>= 3'
+    dependencies:
+      vue: 3.2.40
+    dev: true
 
   /@histoire/app/0.11.3_vite@3.1.7:
     resolution: {integrity: sha512-+9+s0tMWWRfjNDaCbB4x2kVtsiGfdLGI1cO6Pnt32MxlUHObYWEmYVRTcVp2Rvj2EA6v5G+bpWHkEmX0jrPpBQ==}
@@ -5834,10 +5873,6 @@ packages:
       set-blocking: 2.0.0
     dev: true
 
-  /nprogress/0.2.0:
-    resolution: {integrity: sha512-I19aIingLgR1fmhftnbWWO3dXc0hSxqHQHQb3H8m+K3TnEn/iSeTZZOyvKXWqQESMwuUVnatlCnZdLBZZt2VSA==}
-    dev: true
-
   /nth-check/2.1.1:
     resolution: {integrity: sha512-lqjrjmaOoAnWfMmBPL+XNnynZh2+swxiX3WUE0s4yEHI6m+AwrK2UZOimIRl3X/4QctVqS8AiZjFqyOGrMXb/w==}
     dependencies:
@@ -8077,6 +8112,31 @@ packages:
     engines: {node: '>= 0.8'}
     dev: true
 
+  /unplugin-vue-components/0.22.8_vue@3.2.40:
+    resolution: {integrity: sha512-Musnwdtr6uj9Zopo4oeh4lp9+fJ2ArXVDzSiZxF4YC9v+pLnasKVKEEAjdXuQQ3u3KtntVw6PCscyAt52eS75g==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      '@babel/parser': ^7.15.8
+      vue: 2 || 3
+    peerDependenciesMeta:
+      '@babel/parser':
+        optional: true
+    dependencies:
+      '@antfu/utils': 0.5.2
+      '@rollup/pluginutils': 4.2.1
+      chokidar: 3.5.3
+      debug: 4.3.4
+      fast-glob: 3.2.12
+      local-pkg: 0.4.2
+      magic-string: 0.26.7
+      minimatch: 5.1.0
+      resolve: 1.22.1
+      unplugin: 0.9.6
+      vue: 3.2.40
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
   /unplugin/0.9.6:
     resolution: {integrity: sha512-YYLtfoNiie/lxswy1GOsKXgnLJTE27la/PeCGznSItk+8METYZErO+zzV9KQ/hXhPwzIJsfJ4s0m1Rl7ZCWZ4Q==}
     dependencies:
@@ -8278,8 +8338,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitepress/1.0.0-alpha.17_tbpndr44ulefs3hehwpi2mkf2y:
-    resolution: {integrity: sha512-8qsR0PPcvxZFDKSU7b7VenxDoqlEbWuWgogeyRhp1pQ96QIAlWPS9BbGGHWlnEfgdtLVDxEfAmCBRE0YJX/Thg==}
+  /vitepress/1.0.0-alpha.20_tbpndr44ulefs3hehwpi2mkf2y:
+    resolution: {integrity: sha512-8WXPQbWsoAckdS9FqhZ8MQWLDhq6DQG8dhuEtwsZmPMYtl/ezRYWoV/8gJD0T0xUbz6O6vJ8Sddq7OvEwLFUFA==}
     hasBin: true
     dependencies:
       '@docsearch/css': 3.2.1
@@ -8288,7 +8348,6 @@ packages:
       '@vue/devtools-api': 6.4.4
       '@vueuse/core': 9.3.0_vue@3.2.40
       body-scroll-lock: 4.0.0-beta.0
-      nprogress: 0.2.0
       shiki: 0.11.1
       vite: 3.1.7
       vue: 3.2.40
