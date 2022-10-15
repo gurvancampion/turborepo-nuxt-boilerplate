@@ -58,6 +58,7 @@ importers:
       histoire: ^0.11.5
       jsdom: ^20.0.0
       vitest: ^0.23.4
+      vue: ^3.2.40
     dependencies:
       '@nuxt/kit': /@nuxt/kit-edge/3.0.0-rc.12-27762285.23ad303
     devDependencies:
@@ -70,6 +71,7 @@ importers:
       histoire: 0.11.5_vite@3.1.8
       jsdom: 20.0.1
       vitest: 0.23.4_jsdom@20.0.1
+      vue: 3.2.41
 
 packages:
 
