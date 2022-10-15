@@ -1,0 +1,124 @@
+name: CD
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+env:
+  PATH_BUILD_DOCS: ./apps/docs/pages/.vitepress/dist
+  PATH_BUILD_WEB: ./apps/web/.output
+  PATH_BUILD_UI: ./packages/ui/.histoire/dist
+  CACHE_PATHS_BUILD: |
+    ./apps/docs/pages/.vitepress/dist
+    ./apps/web/.output
+    ./packages/ui/.histoire/dist
+  CACHE_KEY_BUILD: build-${{ github.sha }}
+# To use Remote Caching, uncomment the next lines and follow the steps below.
+#  TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+#  TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
+
+jobs:
+  build:
+    name: Build 🏗️
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Setup
+        uses: ./.github/workflows/setup
+
+      - name: Build
+        run: pnpm build
+
+  lint:
+    name: Lint ✅
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Setup
+        uses: ./.github/workflows/setup
+
+      - name: Lint
+        run: pnpm lint
+
+  test:
+    name: Test 🧪
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Setup
+        uses: ./.github/workflows/setup
+
+      - name: Test
+        run: pnpm test
+
+  deploy-docs-main:
+    name: Deploy docs from main branch 🚀
+    needs: [build, lint, test]
+    runs-on: ubuntu-latest
+#    Deploy in prod after a new release/tag
+#    if: github.ref_type == 'tag'
+
+    environment:
+      name: Docs (main)
+      url: https://turborepo-nuxt-boilerplate-docs-main.vercel.app/
+
+    steps:
+      - uses: actions/cache@v3
+        with:
+          path: ${{ env.CACHE_PATHS_BUILD }}
+          key: ${{ env.CACHE_KEY_BUILD }}
+
+      - uses: amondnet/vercel-action@v25 #deploy
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID_DOCS_MAIN }}
+          working-directory: ${{ env.PATH_BUILD_DOCS }}
+
+  deploy-web-main:
+    name: Deploy web app from main branch 🚀
+    needs: [build, lint, test]
+    runs-on: ubuntu-latest
+
+    environment:
+      name: Web (main)
+      url: https://turborepo-nuxt-boilerplate-web-main.vercel.app/
+
+    steps:
+      - uses: actions/cache@v3
+        with:
+          path: ${{ env.CACHE_PATHS_BUILD }}
+          key: ${{ env.CACHE_KEY_BUILD }}
+
+      - uses: amondnet/vercel-action@v25
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: ${{ secrets.ORG_ID }}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID_WEB_MAIN }}
+          working-directory: ${{ env.PATH_BUILD_WEB }}
+
+  deploy-ui-main:
+    name: Deploy UI from main branch 🚀
+    needs: [build, lint, test]
+    runs-on: ubuntu-latest
+
+    environment:
+      name: UI (main)
+      url: https://turborepo-nuxt-boilerplate-ui-main.vercel.app/
+
+    steps:
+      - uses: actions/cache@v3
+        with:
+          path: ${{ env.CACHE_PATHS_BUILD }}
+          key: ${{ env.CACHE_KEY_BUILD }}
+
+      - uses: amondnet/vercel-action@v25
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: ${{ secrets.ORG_ID }}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID_UI_MAIN }}
+          working-directory: ${{ env.PATH_BUILD_UI }}
