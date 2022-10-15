@@ -32,6 +32,12 @@ jobs:
       - name: Build
         run: pnpm build
 
+      - name: Cache build
+        uses: actions/cache@v3
+        with:
+          path: ${{ env.CACHE_PATHS_BUILD }}
+          key: ${{ env.CACHE_KEY_BUILD }}
+
   lint:
     name: Lint ✅
     needs: build
