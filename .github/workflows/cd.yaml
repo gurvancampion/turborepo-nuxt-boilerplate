@@ -3,8 +3,6 @@ name: CD
 on:
   push:
     branches: ["main"]
-  pull_request:
-    branches: ["main"]
 
 env:
   PATH_BUILD_DOCS: ./apps/docs/pages/.vitepress/dist
@@ -25,6 +23,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
       - name: Setup
         uses: ./.github/workflows/setup
 
@@ -37,6 +38,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
       - name: Setup
         uses: ./.github/workflows/setup
 
@@ -49,6 +53,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
       - name: Setup
         uses: ./.github/workflows/setup
 
