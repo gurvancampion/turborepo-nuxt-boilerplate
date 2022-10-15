@@ -2,6 +2,7 @@ name: setup
 description: 'Setup (Dependencies, Nodejs)'
 
 runs:
+  using: 'composite'
   steps:
     - name: Install pnpm
       uses: pnpm/action-setup@v2.2.3
@@ -13,4 +14,5 @@ runs:
         cache: 'pnpm'
 
     - name: Install dependencies
+      shell: bash
       run: pnpm install
