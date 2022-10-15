@@ -5,12 +5,9 @@ on:
     branches: ["main"]
 
 env:
-#  PATH_BUILD_DOCS: ./apps/docs
-#  PATH_BUILD_WEB: ./apps/web
-#  PATH_BUILD_UI: ./packages/ui
-  PATH_BUILD_DOCS: ./apps/docs/pages/.vitepress/dist
-  PATH_BUILD_WEB: ./apps/web/.output
-  PATH_BUILD_UI: ./packages/ui/.histoire/dist
+  PATH_BUILD_DOCS: apps/docs/pages/.vitepress/dist
+  PATH_BUILD_WEB: apps/web/.output
+  PATH_BUILD_UI: packages/ui/.histoire/dist
   CACHE_PATHS_BUILD: |
     ./apps/docs/pages/.vitepress/dist
     ./apps/web/.output
