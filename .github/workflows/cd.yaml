@@ -5,9 +5,12 @@ on:
     branches: ["main"]
 
 env:
-  PATH_BUILD_DOCS: ./apps/docs/pages/.vitepress/dist
-  PATH_BUILD_WEB: ./apps/web/.output
-  PATH_BUILD_UI: ./packages/ui/.histoire/dist
+  PATH_BUILD_DOCS: ./apps/docs
+  PATH_BUILD_WEB: ./apps/web
+  PATH_BUILD_UI: ./packages/ui
+#  PATH_BUILD_DOCS: ./apps/docs/pages/.vitepress/dist
+#  PATH_BUILD_WEB: ./apps/web/.output
+#  PATH_BUILD_UI: ./packages/ui/.histoire/dist
   CACHE_PATHS_BUILD: |
     ./apps/docs/pages/.vitepress/dist
     ./apps/web/.output
@@ -91,7 +94,6 @@ jobs:
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID_DOCS_MAIN }}
           working-directory: ${{ env.PATH_BUILD_DOCS }}
-          git-directory: ./
 
   deploy-web-main:
     name: Deploy web app from main branch 🚀
@@ -114,7 +116,6 @@ jobs:
           vercel-org-id: ${{ secrets.ORG_ID }}
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID_WEB_MAIN }}
           working-directory: ${{ env.PATH_BUILD_WEB }}
-          git-directory: ./
 
   deploy-ui-main:
     name: Deploy UI from main branch 🚀
@@ -137,4 +138,3 @@ jobs:
           vercel-org-id: ${{ secrets.ORG_ID }}
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID_UI_MAIN }}
           working-directory: ${{ env.PATH_BUILD_UI }}
-          git-directory: ./
