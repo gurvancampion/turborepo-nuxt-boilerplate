@@ -109,8 +109,14 @@ jobs:
           path: ${{ env.CACHE_PATHS_BUILD }}
           key: ${{ env.CACHE_KEY_BUILD }}
 
-      - name: Setup
-        uses: ./.github/workflows/setup
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2.2.3
+
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'pnpm'
 
 # It works using the netlify CLI https://github.com/nuxt/framework/issues/4439
       - name: Deploy to Netlify using their CLI
