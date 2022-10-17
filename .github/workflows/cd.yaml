@@ -121,7 +121,7 @@ jobs:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
         run: |
           cd ${{ env.PATH_BUILD_WEB }}
-          pnpm dlx netlify deploy --dir=dist -p
+          npx netlify deploy --dir=dist -p
 
   deploy-ui-main:
     name: Deploy UI from main branch 🚀
