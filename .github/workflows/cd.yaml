@@ -109,9 +109,6 @@ jobs:
           path: ${{ env.CACHE_PATHS_BUILD }}
           key: ${{ env.CACHE_KEY_BUILD }}
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2.2.3
-
       - name: Use Node.js
         uses: actions/setup-node@v3
         with:
