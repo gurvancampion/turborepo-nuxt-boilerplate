@@ -113,7 +113,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16
-          cache: 'pnpm'
 
 # It works using the netlify CLI https://github.com/nuxt/framework/issues/4439
       - name: Deploy to Netlify using their CLI
