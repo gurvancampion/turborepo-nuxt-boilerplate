@@ -110,14 +110,23 @@ jobs:
           path: ${{ env.CACHE_PATHS_BUILD }}
           key: ${{ env.CACHE_KEY_BUILD }}
 
-      # It works using the netlify CLI https://github.com/nuxt/framework/issues/4439
-      - name: Deploy to Netlify using their CLI
-        uses: netlify/actions/cli@master
+      - uses: nwtgck/actions-netlify@v1.2
         with:
-          args: deploy --dir=${{ env.PATH_BUILD_WEB }} --functions=${{ env.PATH_BUILD_WEB_FUNCTIONS }} -p
+          publish-dir: ${{ env.PATH_BUILD_WEB }}
+          functions-dir: ${{ env.PATH_BUILD_WEB_FUNCTIONS }}
+          production-deploy: true
         env:
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID_WEB_MAIN }}
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID_UI_MAIN }}
+
+# It works using the netlify CLI https://github.com/nuxt/framework/issues/4439
+#      - name: Deploy to Netlify using their CLI
+#        uses: netlify/actions/cli@master
+#        with:
+#          args: deploy --dir=${{ env.PATH_BUILD_WEB }} --functions=${{ env.PATH_BUILD_WEB_FUNCTIONS }} -p
+#        env:
+#          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID_WEB_MAIN }}
+#          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
 
   deploy-ui-main:
     name: Deploy UI from main branch 🚀
