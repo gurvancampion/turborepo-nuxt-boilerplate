@@ -7,7 +7,6 @@ on:
 env:
   PATH_BUILD_DOCS: ./apps/docs/pages/.vitepress/dist
   PATH_BUILD_WEB: ./apps/web/dist
-  PATH_BUILD_WEB_FUNCTIONS: ./apps/web/.netlify/functions-internal/server
   PATH_BUILD_UI: ./packages/ui/.histoire/dist
   CACHE_PATHS_BUILD: |
     ./apps/docs/pages/.vitepress/dist
@@ -110,14 +109,17 @@ jobs:
           path: ${{ env.CACHE_PATHS_BUILD }}
           key: ${{ env.CACHE_KEY_BUILD }}
 
+      - name: Setup
+        uses: ./.github/workflows/setup
+
 # It works using the netlify CLI https://github.com/nuxt/framework/issues/4439
       - name: Deploy to Netlify using their CLI
-        uses: netlify/actions/cli@master
-        with:
-          args: deploy --dir=${{ env.PATH_BUILD_WEB }} -p
         env:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID_WEB_MAIN }}
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+        run: |
+          cd ${{ env.PATH_BUILD_WEB }}
+          pnpm dlx netlify deploy --dir=dist -p
 
   deploy-ui-main:
     name: Deploy UI from main branch 🚀
