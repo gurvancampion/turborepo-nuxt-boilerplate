@@ -6,11 +6,13 @@ on:
 
 env:
   PATH_BUILD_DOCS: ./apps/docs/pages/.vitepress/dist
-  PATH_BUILD_WEB: ./apps/web/.output
+  PATH_BUILD_WEB: ./apps/web/dist
+  PATH_BUILD_WEB_FUNCTIONS: ./apps/web/.netlify/functions-internal
   PATH_BUILD_UI: ./packages/ui/.histoire/dist
   CACHE_PATHS_BUILD: |
     ./apps/docs/pages/.vitepress/dist
-    ./apps/web/.output
+    ./apps/web/.netlify
+    ./apps/web/dist
     ./packages/ui/.histoire/dist
   CACHE_KEY_BUILD: build-${{ github.sha }}
 # To use Remote Caching, uncomment the next lines and follow the steps below.
@@ -110,6 +112,7 @@ jobs:
 
       - uses: nwtgck/actions-netlify@v1.2
         with:
+          functions-dir: ${{ env.PATH_BUILD_WEB_FUNCTIONS }}
           publish-dir: ${{ env.PATH_BUILD_WEB }}
           production-deploy: true
         env:
