@@ -12,12 +12,12 @@
   "devDependencies": {
     "@histoire/plugin-vue": "^0.11.5",
     "@myturborepo/tsconfig": "workspace:*",
-    "@vitejs/plugin-vue": "^3.1.0",
+    "@vitejs/plugin-vue": "^3.1.2",
     "@vitest/coverage-c8": "^0.23.4",
     "@vue/test-utils": "^2.1.0",
     "c8": "^7.12.0",
     "histoire": "^0.11.5",
-    "jsdom": "^20.0.0",
+    "jsdom": "^20.0.1",
     "vitest": "^0.23.4"
   }
 }
