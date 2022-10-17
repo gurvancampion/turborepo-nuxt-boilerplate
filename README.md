@@ -1,6 +1,6 @@
 # Turborepo nuxt starter
 
-[![CI/CD](https://github.com/gurvan-guss/turborepo-nuxt-boilerplate/actions/workflows/cd.yaml/badge.svg)](https://github.com/gurvan-guss/turborepo-nuxt-boilerplate/actions/workflows/cd.yaml)
+[![CI/CD](https://github.com/gurvan-guss/turborepo-nuxt-boilerplate/actions/workflows/ci.yaml/badge.svg)](https://github.com/gurvan-guss/turborepo-nuxt-boilerplate/actions/workflows/ci.yaml)
 [![App](https://img.shields.io/badge/App-Preview-blue?logo=netlify&logoColor=white)](https://turborepo-nuxt-boilerplate-web-main.netlify.app/)
 [![UI](https://img.shields.io/badge/UI(Histoire)-Preview-blue?logo=netlify&logoColor=white)](https://turborepo-nuxt-boilerplate-ui-main.netlify.app/)
 [![Docs](https://img.shields.io/badge/Docs(Vitepress)-Preview-blue?logo=netlify&logoColor=white)](https://turborepo-nuxt-boilerplate-docs-main.netlify.app/)
