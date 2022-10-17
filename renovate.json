@@ -1,6 +1,13 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base"
+    "github>nuxt/renovate-config-nuxt",
+    "packages:linters",
+    ":labels(dependencies,devops)",
+    ":maintainLockFilesWeekly",
+    ":enableVulnerabilityAlerts",
+    ":automergeLinters",
+    ":automergeTypes",
+    ":automergePatch"
   ]
 }
