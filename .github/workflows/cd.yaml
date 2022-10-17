@@ -7,7 +7,7 @@ on:
 env:
   PATH_BUILD_DOCS: ./apps/docs/pages/.vitepress/dist
   PATH_BUILD_WEB: ./apps/web/dist
-  PATH_BUILD_WEB_FUNCTIONS: ./apps/web/.netlify/functions-internal
+  PATH_BUILD_WEB_FUNCTIONS: ./apps/web/.netlify/functions-internal/server
   PATH_BUILD_UI: ./packages/ui/.histoire/dist
   CACHE_PATHS_BUILD: |
     ./apps/docs/pages/.vitepress/dist
@@ -112,8 +112,8 @@ jobs:
 
       - uses: nwtgck/actions-netlify@v1.2
         with:
-#          functions-dir: ${{ env.PATH_BUILD_WEB_FUNCTIONS }}
           publish-dir: ${{ env.PATH_BUILD_WEB }}
+          functions-dir: ${{ env.PATH_BUILD_WEB_FUNCTIONS }}
           production-deploy: true
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
