@@ -76,7 +76,7 @@ jobs:
     name: Deploy docs from main branch 🚀
     needs: [build, lint, test]
     runs-on: ubuntu-latest
-    if: github.ref_type == 'tag'
+    if: startsWith(github.ref, 'refs/tags/v')
 
     environment:
       name: Docs (main)
@@ -100,7 +100,7 @@ jobs:
     name: Deploy web app from main branch 🚀
     needs: [build, lint, test]
     runs-on: ubuntu-latest
-    if: github.ref_type == 'tag'
+    if: startsWith(github.ref, 'refs/tags/v')
 
     environment:
       name: Web (main)
@@ -135,7 +135,7 @@ jobs:
     name: Deploy UI from main branch 🚀
     needs: [build, lint, test]
     runs-on: ubuntu-latest
-    if: github.ref_type == 'tag'
+    if: startsWith(github.ref, 'refs/tags/v')
 
     environment:
       name: UI (main)
