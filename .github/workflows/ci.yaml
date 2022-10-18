@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+    tags:
   pull_request:
 
 env:
@@ -76,7 +77,7 @@ jobs:
     name: Deploy docs from main branch 🚀
     needs: [build, lint, test]
     runs-on: ubuntu-latest
-    if: startsWith(github.ref, 'refs/tags/v')
+    if: github.ref_type == 'tag'
 
     environment:
       name: Docs (main)
@@ -100,7 +101,7 @@ jobs:
     name: Deploy web app from main branch 🚀
     needs: [build, lint, test]
     runs-on: ubuntu-latest
-    if: startsWith(github.ref, 'refs/tags/v')
+    if: github.ref_type == 'tag'
 
     environment:
       name: Web (main)
@@ -135,7 +136,7 @@ jobs:
     name: Deploy UI from main branch 🚀
     needs: [build, lint, test]
     runs-on: ubuntu-latest
-    if: startsWith(github.ref, 'refs/tags/v')
+    if: github.ref_type == 'tag'
 
     environment:
       name: UI (main)
