@@ -1,6 +1,6 @@
 {
   "name": "turborepo-nuxt-boilerplate",
-  "version": "0.0.0",
+  "version": "0.0.5",
   "private": true,
   "workspaces": [
     "apps/*",
@@ -15,10 +15,12 @@
   },
   "devDependencies": {
     "@myturborepo/eslint-config-custom": "workspace:*",
+    "@release-it/conventional-changelog": "^5.1.1",
+    "release-it": "^15.5.0",
     "turbo": "latest"
   },
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=v16.18.0"
   },
-  "packageManager": "pnpm@7.10.0"
+  "packageManager": "pnpm@7.13.5"
 }
