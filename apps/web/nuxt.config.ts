@@ -10,4 +10,7 @@ export default defineNuxtConfig({
     uno: true,
     shortcuts,
   },
+  nitro: {
+    preset: 'netlify',
+  },
 })
