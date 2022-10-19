@@ -1,6 +1,4 @@
 <script lang="ts" setup>
-import { onMounted } from 'vue'
-
 // https://anu-vue.netlify.app/guide/components/button.html
 withDefaults(defineProps<{
   color?: 'primary' | 'success' | 'info' | 'warning' | 'danger'
@@ -10,11 +8,6 @@ withDefaults(defineProps<{
 }>(), {
   color: 'primary',
   variant: 'fill',
-})
-
-onMounted(() => {
-  // eslint-disable-next-line no-console
-  console.log('button log')
 })
 </script>
 

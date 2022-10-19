@@ -1,0 +1,158 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - '*'
+  pull_request:
+
+env:
+  PATH_BUILD_DOCS: ./apps/docs/pages/.vitepress/dist
+  PATH_BUILD_WEB: ./apps/web/dist
+  PATH_BUILD_WEB_FUNCTIONS: ./apps/web/.netlify/functions-internal
+  PATH_BUILD_UI: ./packages/ui/.histoire/dist
+  CACHE_PATHS_BUILD: |
+    ./apps/docs/pages/.vitepress/dist
+    ./apps/web/.netlify
+    ./apps/web/dist
+    ./packages/ui/.histoire/dist
+  CACHE_KEY_BUILD: build-${{ github.sha }}
+# To use Remote Caching, uncomment the next lines and follow the steps below.
+#  TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+#  TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
+
+jobs:
+  build:
+    name: Build 🏗️
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup
+        uses: ./.github/workflows/setup
+
+      - name: Build
+        run: pnpm build
+
+      - name: Cache build
+        uses: actions/cache@v3
+        with:
+          path: ${{ env.CACHE_PATHS_BUILD }}
+          key: ${{ env.CACHE_KEY_BUILD }}
+
+  lint:
+    name: Lint ✅
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup
+        uses: ./.github/workflows/setup
+
+      - name: Lint
+        run: pnpm lint
+
+  test:
+    name: Test 🧪
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup
+        uses: ./.github/workflows/setup
+
+      - name: Test
+        run: pnpm test
+
+  deploy-docs-main:
+    name: Deploy docs from main branch 🚀
+    needs: [build, lint, test]
+    runs-on: ubuntu-latest
+    if: github.ref_type == 'tag'
+
+    environment:
+      name: Docs (main)
+      url: https://turborepo-nuxt-boilerplate-docs-main.netlify.app/
+
+    steps:
+      - uses: actions/cache@v3
+        with:
+          path: ${{ env.CACHE_PATHS_BUILD }}
+          key: ${{ env.CACHE_KEY_BUILD }}
+
+      - uses: nwtgck/actions-netlify@v1.2
+        with:
+          publish-dir: ${{ env.PATH_BUILD_DOCS }}
+          production-deploy: true
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID_DOCS_MAIN }}
+
+  deploy-web-main:
+    name: Deploy web app from main branch 🚀
+    needs: [build, lint, test]
+    runs-on: ubuntu-latest
+    if: github.ref_type == 'tag'
+
+    environment:
+      name: Web (main)
+      url: https://turborepo-nuxt-boilerplate-web-main.netlify.app/
+
+    steps:
+      - uses: actions/cache@v3
+        with:
+          path: ${{ env.CACHE_PATHS_BUILD }}
+          key: ${{ env.CACHE_KEY_BUILD }}
+
+# Doesn't work
+#      - uses: nwtgck/actions-netlify@v1.2
+#        with:
+#          publish-dir: ${{ env.PATH_BUILD_WEB }}
+#          functions-dir: ${{ env.PATH_BUILD_WEB_FUNCTIONS }}
+#          production-deploy: true
+#        env:
+#          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+#          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID_UI_MAIN }}
+
+# Using netlify CLI https://github.com/nuxt/framework/issues/4439
+      - name: Deploy to Netlify using their CLI
+        uses: netlify/actions/cli@master
+        with:
+          args: deploy --dir=${{ env.PATH_BUILD_WEB }} --functions=${{ env.PATH_BUILD_WEB_FUNCTIONS }} -p
+        env:
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID_WEB_MAIN }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+
+  deploy-ui-main:
+    name: Deploy UI from main branch 🚀
+    needs: [build, lint, test]
+    runs-on: ubuntu-latest
+    if: github.ref_type == 'tag'
+
+    environment:
+      name: UI (main)
+      url: https://turborepo-nuxt-boilerplate-ui-main.netlify.app/
+
+    steps:
+      - uses: actions/cache@v3
+        with:
+          path: ${{ env.CACHE_PATHS_BUILD }}
+          key: ${{ env.CACHE_KEY_BUILD }}
+
+      - uses: nwtgck/actions-netlify@v1.2
+        with:
+         publish-dir: ${{ env.PATH_BUILD_UI }}
+         production-deploy: true
+        env:
+         NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+         NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID_UI_MAIN }}

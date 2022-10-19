@@ -12,8 +12,8 @@
     "@myturborepo/ui": "workspace:*",
     "unocss": "^0.45.26",
     "unplugin-vue-components": "^0.22.8",
-    "vitepress": "1.0.0-alpha.17",
-    "vue": "^3.2.40"
+    "vitepress": "1.0.0-alpha.21",
+    "vue": "^3.2.41"
   },
   "dependencies": {
     "anu-vue": "^0.9.1"
