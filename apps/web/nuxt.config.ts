@@ -8,4 +8,7 @@ export default defineNuxtConfig({
   tailwindcss: {
     cssPath: '@myturborepo/tailwind-preset/globals.css',
   },
+  nitro: {
+    preset: 'netlify',
+  },
 })
