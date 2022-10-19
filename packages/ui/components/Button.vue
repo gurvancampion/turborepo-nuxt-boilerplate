@@ -1,15 +1,9 @@
 <script lang="ts" setup>
-import { onMounted } from 'vue'
 import { StarIcon } from '@heroicons/vue/24/solid/index.js'
 
 defineProps<{
   disabled?: boolean
 }>()
-
-onMounted(() => {
-  // eslint-disable-next-line no-console
-  console.log('button log')
-})
 </script>
 
 <template>

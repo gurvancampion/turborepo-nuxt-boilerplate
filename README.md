@@ -1,6 +1,18 @@
-# Turborepo starter
+# Turborepo nuxt starter
 
-This is a monorepo with Nuxt, Histoire & VitePress.
+[![CI/CD](https://github.com/gurvan-guss/turborepo-nuxt-boilerplate/actions/workflows/ci.yaml/badge.svg)](https://github.com/gurvan-guss/turborepo-nuxt-boilerplate/actions/workflows/ci.yaml)
+[![App](https://img.shields.io/badge/App-Preview-blue?logo=netlify&logoColor=white)](https://turborepo-nuxt-boilerplate-web-main.netlify.app/)
+[![UI](https://img.shields.io/badge/UI(Histoire)-Preview-blue?logo=netlify&logoColor=white)](https://turborepo-nuxt-boilerplate-ui-main.netlify.app/)
+[![Docs](https://img.shields.io/badge/Docs(Vitepress)-Preview-blue?logo=netlify&logoColor=white)](https://turborepo-nuxt-boilerplate-docs-main.netlify.app/)
+
+This is a monorepo with Nuxt, Histoire, Vitest & VitePress as a starter for any project that can be easily extended.
+You can also find additional branches:
+- [TailwindCSS](https://github.com/gurvan-guss/turborepo-nuxt-boilerplate/tree/tailwind)
+- [TailwindCSS + TailwindUI](https://github.com/gurvan-guss/turborepo-nuxt-boilerplate/tree/tailwindui)
+- [Unocss](https://github.com/gurvan-guss/turborepo-nuxt-boilerplate/tree/unocss)
+- [Unocss + Anu](https://github.com/gurvan-guss/turborepo-nuxt-boilerplate/tree/unocss-anu)
+- [Unocss](https://github.com/gurvan-guss/turborepo-nuxt-boilerplate/tree/unocss-anu)
+- [AdonisJS](https://github.com/gurvan-guss/turborepo-nuxt-boilerplate/tree/adonis)
 
 ## What's inside?
 
@@ -28,7 +40,7 @@ This turborepo has some additional tools already setup for you:
 To install all dependencies, run the following command:
 
 ```
-pnpm install --shamefully-hoist
+pnpm install
 ```
 
 ### Develop
@@ -81,6 +93,8 @@ Next, you can link your Turborepo to your Remote Cache by running the following 
 ```
 pnpm dlx turbo link
 ```
+
+Use a custom remote cache server [turbo-remote-cache](https://github.com/ducktors/turborepo-remote-cache)
 
 ## Useful Links
 

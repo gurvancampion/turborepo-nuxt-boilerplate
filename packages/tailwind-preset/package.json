@@ -1,7 +1,7 @@
 {
   "name": "@myturborepo/tailwind-preset",
   "private": true,
-  "main": "index.cjs",
+  "main": "index.js",
   "files": [
     "globals.css",
     "postcss.config"

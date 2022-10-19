@@ -15,4 +15,7 @@ export default defineNuxtConfig({
       Components({ resolvers: [HeadlessUiResolver()] }),
     ],
   },
+  nitro: {
+    preset: 'netlify',
+  },
 })
