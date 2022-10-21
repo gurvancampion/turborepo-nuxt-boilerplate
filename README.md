@@ -11,7 +11,7 @@ You can also find additional branches:
 - [TailwindCSS + TailwindUI](https://github.com/gurvan-guss/turborepo-nuxt-boilerplate/tree/tailwindui)
 - [Unocss](https://github.com/gurvan-guss/turborepo-nuxt-boilerplate/tree/unocss)
 - [Unocss + Anu](https://github.com/gurvan-guss/turborepo-nuxt-boilerplate/tree/unocss-anu)
-- [Unocss](https://github.com/gurvan-guss/turborepo-nuxt-boilerplate/tree/unocss-anu)
+- [Unocss + Vuetify](https://github.com/gurvan-guss/turborepo-nuxt-boilerplate/tree/unocss-vuetify)
 - [AdonisJS](https://github.com/gurvan-guss/turborepo-nuxt-boilerplate/tree/adonis)
 
 ## What's inside?
