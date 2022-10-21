@@ -8,5 +8,14 @@
     ":automergeLinters",
     ":automergeTypes",
     ":automergePatch"
+  ],
+  "baseBranches": [
+    "main",
+    "tailwind",
+    "tailwindui",
+    "unocss",
+    "unocss-anu",
+    "unocss-vuetify",
+    "adonis"
   ]
 }
