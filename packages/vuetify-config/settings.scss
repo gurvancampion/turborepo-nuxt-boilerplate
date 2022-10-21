@@ -1,0 +1,6 @@
+// There are some caveats by disabling below utilities to reduce a little bit build bundle size
+// which seems not worth it, see https://next.vuetifyjs.com/en/features/sass-variables/#caveats
+@use 'vuetify/settings' with (
+  $color-pack: false,
+  $utilities: false,
+);

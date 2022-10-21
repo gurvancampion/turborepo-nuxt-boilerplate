@@ -1,0 +1,11 @@
+{
+  "name": "@myturborepo/vuetify-config",
+  "private": true,
+  "main": "index.ts",
+  "files": [
+    "settings.scss"
+  ],
+  "dependencies": {
+    "vuetify": "3.0.0-beta.14"
+  }
+}

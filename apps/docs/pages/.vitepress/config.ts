@@ -1,4 +1,6 @@
+import vuetify from 'vite-plugin-vuetify'
 import Unocss from 'unocss/vite'
+import { presetIcons, presetUno } from 'unocss'
 import { defineConfig } from 'vitepress'
 // Workaround using relative path:
 // https://github.com/vitejs/vite/issues/5370
@@ -27,7 +29,12 @@ export default defineConfig({
   },
   vite: {
     plugins: [
+      vuetify(),
       Unocss({
+        presets: [
+          presetUno(),
+          presetIcons(),
+        ],
         shortcuts,
       }),
     ],

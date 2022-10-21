@@ -1,14 +1,9 @@
-<script lang="ts" setup>
-defineProps<{
-  disabled?: boolean
-}>()
-defineEmits<{
-  (e: 'submit', value: string): void
-}>()
+<script setup>
+import { mdiCloudUpload } from '@mdi/js'
 </script>
 
 <template>
-  <button class="btn" :disabled="disabled" @click="$emit('submit')">
-    <slot>Button</slot>
-  </button>
+  <v-btn :prepend-icon="mdiCloudUpload">
+    Button
+  </v-btn>
 </template>

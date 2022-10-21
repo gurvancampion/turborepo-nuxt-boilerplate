@@ -8,8 +8,11 @@
     "serve": "vitepress serve pages"
   },
   "devDependencies": {
+    "@iconify-json/mdi": "^1.1.34",
     "@myturborepo/ui": "workspace:*",
+    "@myturborepo/vuetify-config": "workspace:*",
     "unocss": "^0.45.26",
+    "vite-plugin-vuetify": "^1.0.0",
     "vitepress": "1.0.0-alpha.21",
     "vue": "^3.2.41"
   }
