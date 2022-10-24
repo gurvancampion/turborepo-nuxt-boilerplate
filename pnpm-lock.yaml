@@ -37,13 +37,13 @@ importers:
       '@myturborepo/tailwind-preset': workspace:*
       '@myturborepo/tsconfig': workspace:*
       '@myturborepo/ui': workspace:*
-      '@nuxtjs/tailwindcss': ^6.1.0
+      '@nuxtjs/tailwindcss': ^6.1.1
       nuxt: 3.0.0-rc.12
     devDependencies:
       '@myturborepo/tailwind-preset': link:../../packages/tailwind-preset
       '@myturborepo/tsconfig': link:../../packages/tsconfig
       '@myturborepo/ui': link:../../packages/ui
-      '@nuxtjs/tailwindcss': 6.1.0
+      '@nuxtjs/tailwindcss': 6.1.1
       nuxt: 3.0.0-rc.12
 
   packages/eslint-config-custom:
@@ -1123,8 +1123,8 @@ packages:
       - vti
     dev: true
 
-  /@nuxtjs/tailwindcss/6.1.0:
-    resolution: {integrity: sha512-B5CkSVLb5w7KeJLB2U+TW3MrKAfWIBykrCq+pnhymQhrNp1aLCBzZLYP2glyqwWETq9AS9UlCigKZ1bcUIvXCA==}
+  /@nuxtjs/tailwindcss/6.1.1:
+    resolution: {integrity: sha512-8yrGk2y7IUAMOW3+b0S/nWQmyZXtLge7pYYDXfiEhU4voL7zMoMdtp+ovmUr5LvTuEn3w5zCDczaBexvy0nmDw==}
     dependencies:
       '@nuxt/kit': 3.0.0-rc.12
       '@nuxt/postcss8': 1.1.3
