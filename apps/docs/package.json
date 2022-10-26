@@ -10,6 +10,7 @@
   "devDependencies": {
     "@iconify-json/bx": "^1.1.4",
     "@myturborepo/ui": "workspace:*",
+    "@vitejs/plugin-vue-jsx": "^2.0.1",
     "unocss": "^0.45.26",
     "unplugin-vue-components": "^0.22.8",
     "vitepress": "1.0.0-alpha.21",

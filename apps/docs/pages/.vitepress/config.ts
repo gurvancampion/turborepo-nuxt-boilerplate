@@ -2,6 +2,7 @@ import { presetIcons, presetUno } from 'unocss'
 import Unocss from 'unocss/vite'
 import Components from 'unplugin-vue-components/vite'
 import { AnuComponentResolver, presetCore, presetThemeDefault } from 'anu-vue'
+import vueJsx from '@vitejs/plugin-vue-jsx'
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
@@ -26,6 +27,7 @@ export default defineConfig({
   },
   vite: {
     plugins: [
+      vueJsx(), // Required for anu-vue
       Unocss({
         presets: [
           presetUno(),

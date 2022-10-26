@@ -10,7 +10,7 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   plugins: [
     vue(),
-    vueJsx(),
+    vueJsx(), // Required for anu-vue
     Unocss({
       mode: 'vue-scoped',
       presets: [

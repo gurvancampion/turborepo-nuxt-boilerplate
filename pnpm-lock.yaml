@@ -18,6 +18,7 @@ importers:
     specifiers:
       '@iconify-json/bx': ^1.1.4
       '@myturborepo/ui': workspace:*
+      '@vitejs/plugin-vue-jsx': ^2.0.1
       anu-vue: ^0.9.1
       unocss: ^0.45.26
       unplugin-vue-components: ^0.22.8
@@ -28,6 +29,7 @@ importers:
     devDependencies:
       '@iconify-json/bx': 1.1.4
       '@myturborepo/ui': link:../../packages/ui
+      '@vitejs/plugin-vue-jsx': 2.0.1_vite@3.1.8+vue@3.2.41
       unocss: 0.45.29_vite@3.1.8
       unplugin-vue-components: 0.22.8_vue@3.2.41
       vitepress: 1.0.0-alpha.21_tbpndr44ulefs3hehwpi2mkf2y
