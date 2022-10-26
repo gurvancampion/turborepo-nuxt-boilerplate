@@ -28,6 +28,9 @@ export default defineConfig({
     ],
   },
   vite: {
+    ssr: {
+      noExternal: ['vuetify'],
+    },
     plugins: [
       vuetify(),
       Unocss({
