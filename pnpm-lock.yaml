@@ -21,7 +21,7 @@ importers:
       autoprefixer: ^10.4.12
       postcss: ^8.4.18
       tailwindcss: ^3.2.1
-      vitepress: 1.0.0-alpha.25
+      vitepress: 1.0.0-alpha.26
       vue: ^3.2.41
     devDependencies:
       '@myturborepo/tailwind-preset': link:../../packages/tailwind-preset
@@ -29,7 +29,7 @@ importers:
       autoprefixer: 10.4.12_postcss@8.4.18
       postcss: 8.4.18
       tailwindcss: 3.2.1_postcss@8.4.18
-      vitepress: 1.0.0-alpha.25
+      vitepress: 1.0.0-alpha.26
       vue: 3.2.41
 
   apps/web:
@@ -1750,17 +1750,6 @@ packages:
       vue: 3.2.41
     transitivePeerDependencies:
       - supports-color
-    dev: true
-
-  /@vitejs/plugin-vue/3.1.2_vite@3.1.8+vue@3.2.41:
-    resolution: {integrity: sha512-3zxKNlvA3oNaKDYX0NBclgxTQ1xaFdL7PzwF6zj9tGFziKwmBa3Q/6XcJQxudlT81WxDjEhHmevvIC4Orc1LhQ==}
-    engines: {node: ^14.18.0 || >=16.0.0}
-    peerDependencies:
-      vite: ^3.0.0
-      vue: ^3.2.25
-    dependencies:
-      vite: 3.1.8
-      vue: 3.2.41
     dev: true
 
   /@vitejs/plugin-vue/3.2.0:
@@ -9578,13 +9567,13 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitepress/1.0.0-alpha.25:
-    resolution: {integrity: sha512-qvKQ4aCArGL8nxP7BAeMBY/N9qm6fX5/dVNGESDvpkm/M8BQlIkOIEanlkAEPY9VOCMA1zcX3wtstcEcnjc5fA==}
+  /vitepress/1.0.0-alpha.26:
+    resolution: {integrity: sha512-XpDpflrdmyBmUQrg06q29Mhez144NvoZ48pRvNhANy/wV7E7XJ1zenQROOSADnOsAlhV1gzcNjqiFNObCk7l8A==}
     hasBin: true
     dependencies:
       '@docsearch/css': 3.3.0
       '@docsearch/js': 3.3.0
-      '@vitejs/plugin-vue': 3.1.2_vite@3.1.8+vue@3.2.41
+      '@vitejs/plugin-vue': 3.2.0_vite@3.1.8+vue@3.2.41
       '@vue/devtools-api': 6.4.5
       '@vueuse/core': 9.4.0_vue@3.2.41
       body-scroll-lock: 4.0.0-beta.0
