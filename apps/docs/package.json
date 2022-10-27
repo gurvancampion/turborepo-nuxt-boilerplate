@@ -9,8 +9,8 @@
   },
   "devDependencies": {
     "@myturborepo/ui": "workspace:*",
-    "unocss": "^0.46.0",
-    "vitepress": "1.0.0-alpha.25",
+    "unocss": "^0.46.1",
+    "vitepress": "1.0.0-alpha.26",
     "vue": "^3.2.41"
   }
 }
