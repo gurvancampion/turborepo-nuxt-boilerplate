@@ -16,7 +16,7 @@
     "@myturborepo/tsconfig": "workspace:*",
     "@myturborepo/ui": "workspace:*",
     "@myturborepo/vuetify-config": "workspace:*",
-    "@unocss/nuxt": "^0.46.0",
+    "@unocss/nuxt": "^0.46.1",
     "nuxt": "3.0.0-rc.12",
     "vite-plugin-vuetify": "^1.0.0"
   },
