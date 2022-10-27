@@ -4,7 +4,7 @@
   "devDependencies": {
     "@myturborepo/tsconfig": "workspace:*",
     "typescript": "^4.7.4",
-    "unocss": "^0.45.26"
+    "unocss": "^0.45.30"
   },
   "dependencies": {
     "anu-vue": "^0.9.1"

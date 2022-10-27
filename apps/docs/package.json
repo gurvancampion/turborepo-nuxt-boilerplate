@@ -11,9 +11,9 @@
     "@iconify-json/bx": "^1.1.4",
     "@myturborepo/ui": "workspace:*",
     "@vitejs/plugin-vue-jsx": "^2.0.1",
-    "unocss": "^0.45.26",
-    "unplugin-vue-components": "^0.22.8",
-    "vitepress": "1.0.0-alpha.21",
+    "unocss": "^0.45.30",
+    "unplugin-vue-components": "^0.22.9",
+    "vitepress": "1.0.0-alpha.26",
     "vue": "^3.2.41"
   },
   "dependencies": {

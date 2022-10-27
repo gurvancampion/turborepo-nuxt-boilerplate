@@ -15,9 +15,9 @@
     "@iconify-json/bx": "^1.1.4",
     "@myturborepo/tsconfig": "workspace:*",
     "@myturborepo/ui": "workspace:*",
-    "@unocss/nuxt": "^0.45.26",
+    "@unocss/nuxt": "^0.45.30",
     "nuxt": "3.0.0-rc.12",
-    "unplugin-vue-components": "^0.22.8"
+    "unplugin-vue-components": "^0.22.9"
   },
   "dependencies": {
     "@myturborepo/common": "workspace:*",
