@@ -95,7 +95,7 @@ importers:
       '@histoire/plugin-vue': ^0.11.6
       '@myturborepo/tailwind-preset': workspace:*
       '@myturborepo/tsconfig': workspace:*
-      '@vitejs/plugin-vue': ^3.1.2
+      '@vitejs/plugin-vue': ^3.2.0
       '@vitest/coverage-c8': ^0.24.3
       '@vue/test-utils': ^2.2.0
       autoprefixer: ^10.4.12
@@ -112,7 +112,7 @@ importers:
       '@histoire/plugin-vue': 0.11.6_histoire@0.11.6
       '@myturborepo/tailwind-preset': link:../tailwind-preset
       '@myturborepo/tsconfig': link:../tsconfig
-      '@vitejs/plugin-vue': 3.1.2
+      '@vitejs/plugin-vue': 3.2.0
       '@vitest/coverage-c8': 0.24.3_jsdom@20.0.1
       '@vue/test-utils': 2.2.0
       autoprefixer: 10.4.12_postcss@8.4.18
@@ -1149,7 +1149,7 @@ packages:
     dependencies:
       '@nuxt/kit': 3.0.0-rc.12
       '@rollup/plugin-replace': 5.0.0_rollup@2.79.1
-      '@vitejs/plugin-vue': 3.1.2_vite@3.1.8+vue@3.2.41
+      '@vitejs/plugin-vue': 3.2.0_vite@3.1.8+vue@3.2.41
       '@vitejs/plugin-vue-jsx': 2.0.1_vite@3.1.8+vue@3.2.41
       autoprefixer: 10.4.12_postcss@8.4.18
       chokidar: 3.5.3
@@ -1836,16 +1836,27 @@ packages:
       - supports-color
     dev: true
 
-  /@vitejs/plugin-vue/3.1.2:
+  /@vitejs/plugin-vue/3.1.2_vite@3.1.8+vue@3.2.41:
     resolution: {integrity: sha512-3zxKNlvA3oNaKDYX0NBclgxTQ1xaFdL7PzwF6zj9tGFziKwmBa3Q/6XcJQxudlT81WxDjEhHmevvIC4Orc1LhQ==}
+    engines: {node: ^14.18.0 || >=16.0.0}
+    peerDependencies:
+      vite: ^3.0.0
+      vue: ^3.2.25
+    dependencies:
+      vite: 3.1.8
+      vue: 3.2.41
+    dev: true
+
+  /@vitejs/plugin-vue/3.2.0:
+    resolution: {integrity: sha512-E0tnaL4fr+qkdCNxJ+Xd0yM31UwMkQje76fsDVBBUCoGOUPexu2VDUYHL8P4CwV+zMvWw6nlRw19OnRKmYAJpw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       vite: ^3.0.0
       vue: ^3.2.25
     dev: true
 
-  /@vitejs/plugin-vue/3.1.2_vite@3.1.8+vue@3.2.41:
-    resolution: {integrity: sha512-3zxKNlvA3oNaKDYX0NBclgxTQ1xaFdL7PzwF6zj9tGFziKwmBa3Q/6XcJQxudlT81WxDjEhHmevvIC4Orc1LhQ==}
+  /@vitejs/plugin-vue/3.2.0_vite@3.1.8+vue@3.2.41:
+    resolution: {integrity: sha512-E0tnaL4fr+qkdCNxJ+Xd0yM31UwMkQje76fsDVBBUCoGOUPexu2VDUYHL8P4CwV+zMvWw6nlRw19OnRKmYAJpw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       vite: ^3.0.0
