@@ -7,7 +7,7 @@
     ":enableVulnerabilityAlerts",
     ":automergeLinters",
     ":automergeTypes",
-    ":automergePatch"
+    ":automergeMinor"
   ],
   "baseBranches": [
     "main",
