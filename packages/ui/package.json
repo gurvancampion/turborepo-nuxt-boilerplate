@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "@headlessui/vue": "^1.7.3",
-    "@heroicons/vue": "^2.0.12",
+    "@heroicons/vue": "^2.0.13",
     "@histoire/plugin-vue": "^0.11.6",
     "@myturborepo/tailwind-preset": "workspace:*",
     "@myturborepo/tsconfig": "workspace:*",
