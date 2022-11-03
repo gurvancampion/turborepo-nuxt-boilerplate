@@ -10,7 +10,7 @@
     "test": "vitest run --coverage"
   },
   "devDependencies": {
-    "@headlessui/vue": "^1.7.3",
+    "@headlessui/vue": "^1.7.4",
     "@heroicons/vue": "^2.0.13",
     "@histoire/plugin-vue": "^0.11.6",
     "@myturborepo/tailwind-preset": "workspace:*",
