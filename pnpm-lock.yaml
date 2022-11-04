@@ -20,7 +20,7 @@ importers:
       '@myturborepo/ui': workspace:*
       autoprefixer: ^10.4.13
       postcss: ^8.4.18
-      tailwindcss: ^3.2.1
+      tailwindcss: ^3.2.2
       vitepress: 1.0.0-alpha.27
       vue: ^3.2.41
     devDependencies:
@@ -28,7 +28,7 @@ importers:
       '@myturborepo/ui': link:../../packages/ui
       autoprefixer: 10.4.13_postcss@8.4.18
       postcss: 8.4.18
-      tailwindcss: 3.2.1_postcss@8.4.18
+      tailwindcss: 3.2.2_postcss@8.4.18
       vitepress: 1.0.0-alpha.27
       vue: 3.2.41
 
@@ -65,13 +65,13 @@ importers:
       '@tailwindcss/typography': ^0.5.7
       autoprefixer: ^10.4.13
       postcss: ^8.4.18
-      tailwindcss: ^3.2.1
+      tailwindcss: ^3.2.2
     devDependencies:
-      '@tailwindcss/forms': 0.5.3_tailwindcss@3.2.1
-      '@tailwindcss/typography': 0.5.7_tailwindcss@3.2.1
+      '@tailwindcss/forms': 0.5.3_tailwindcss@3.2.2
+      '@tailwindcss/typography': 0.5.7_tailwindcss@3.2.2
       autoprefixer: 10.4.13_postcss@8.4.18
       postcss: 8.4.18
-      tailwindcss: 3.2.1_postcss@8.4.18
+      tailwindcss: 3.2.2_postcss@8.4.18
 
   packages/tsconfig:
     specifiers: {}
@@ -89,7 +89,7 @@ importers:
       histoire: ^0.11.6
       jsdom: ^20.0.2
       postcss: ^8.4.18
-      tailwindcss: ^3.2.1
+      tailwindcss: ^3.2.2
       vitest: ^0.24.5
     devDependencies:
       '@histoire/plugin-vue': 0.11.6_histoire@0.11.6
@@ -103,7 +103,7 @@ importers:
       histoire: 0.11.6
       jsdom: 20.0.2
       postcss: 8.4.18
-      tailwindcss: 3.2.1_postcss@8.4.18
+      tailwindcss: 3.2.2_postcss@8.4.18
       vitest: 0.24.5_jsdom@20.0.2
 
 packages:
@@ -1245,8 +1245,8 @@ packages:
       postcss: 8.4.18
       postcss-custom-properties: 12.1.10_postcss@8.4.18
       postcss-nesting: 10.2.0_postcss@8.4.18
-      tailwind-config-viewer: 1.7.2_tailwindcss@3.2.1
-      tailwindcss: 3.2.1_postcss@8.4.18
+      tailwind-config-viewer: 1.7.2_tailwindcss@3.2.2
+      tailwindcss: 3.2.2_postcss@8.4.18
       ufo: 0.8.6
     transitivePeerDependencies:
       - supports-color
@@ -1564,16 +1564,16 @@ packages:
       defer-to-connect: 2.0.1
     dev: true
 
-  /@tailwindcss/forms/0.5.3_tailwindcss@3.2.1:
+  /@tailwindcss/forms/0.5.3_tailwindcss@3.2.2:
     resolution: {integrity: sha512-y5mb86JUoiUgBjY/o6FJSFZSEttfb3Q5gllE4xoKjAAD+vBrnIhE4dViwUuow3va8mpH4s9jyUbUbrRGoRdc2Q==}
     peerDependencies:
       tailwindcss: '>=3.0.0 || >= 3.0.0-alpha.1'
     dependencies:
       mini-svg-data-uri: 1.4.4
-      tailwindcss: 3.2.1_postcss@8.4.18
+      tailwindcss: 3.2.2_postcss@8.4.18
     dev: true
 
-  /@tailwindcss/typography/0.5.7_tailwindcss@3.2.1:
+  /@tailwindcss/typography/0.5.7_tailwindcss@3.2.2:
     resolution: {integrity: sha512-JTTSTrgZfp6Ki4svhPA4mkd9nmQ/j9EfE7SbHJ1cLtthKkpW2OxsFXzSmxbhYbEkfNIyAyhle5p4SYyKRbz/jg==}
     peerDependencies:
       tailwindcss: '>=3.0.0 || insiders'
@@ -1582,7 +1582,7 @@ packages:
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       postcss-selector-parser: 6.0.10
-      tailwindcss: 3.2.1_postcss@8.4.18
+      tailwindcss: 3.2.2_postcss@8.4.18
     dev: true
 
   /@tootallnate/once/1.1.2:
@@ -9102,7 +9102,7 @@ packages:
       get-port: 3.2.0
     dev: true
 
-  /tailwind-config-viewer/1.7.2_tailwindcss@3.2.1:
+  /tailwind-config-viewer/1.7.2_tailwindcss@3.2.2:
     resolution: {integrity: sha512-3JJCeAAlvG+i/EBj+tQb0x4weo30QjdSAo4hlcnVbtD+CkpzHi/UwU9InbPMcYH+ESActoa2kCyjpLEyjEkn0Q==}
     engines: {node: '>=8'}
     hasBin: true
@@ -9117,13 +9117,13 @@ packages:
       open: 7.4.2
       portfinder: 1.0.32
       replace-in-file: 6.3.5
-      tailwindcss: 3.2.1_postcss@8.4.18
+      tailwindcss: 3.2.2_postcss@8.4.18
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /tailwindcss/3.2.1_postcss@8.4.18:
-    resolution: {integrity: sha512-Uw+GVSxp5CM48krnjHObqoOwlCt5Qo6nw1jlCRwfGy68dSYb/LwS9ZFidYGRiM+w6rMawkZiu1mEMAsHYAfoLg==}
+  /tailwindcss/3.2.2_postcss@8.4.18:
+    resolution: {integrity: sha512-c2GtSdqg+harR4QeoTmex0Ngfg8IIHNeLQH5yr2B9uZbZR1Xt1rYbjWOWTcj3YLTZhrmZnPowoQDbSRFyZHQ5Q==}
     engines: {node: '>=12.13.0'}
     hasBin: true
     peerDependencies:
