@@ -11,6 +11,6 @@
     "@myturborepo/ui": "workspace:*",
     "unocss": "^0.46.4",
     "vitepress": "1.0.0-alpha.28",
-    "vue": "^3.2.43"
+    "vue": "^3.2.44"
   }
 }
