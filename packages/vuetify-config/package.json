@@ -6,6 +6,6 @@
     "settings.scss"
   ],
   "dependencies": {
-    "vuetify": "3.0.0"
+    "vuetify": "3.0.1"
   }
 }
