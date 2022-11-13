@@ -93,7 +93,7 @@ importers:
       '@myturborepo/tsconfig': workspace:*
       '@vitejs/plugin-vue': ^3.2.0
       '@vitest/coverage-c8': ^0.25.1
-      '@vue/test-utils': ^2.2.1
+      '@vue/test-utils': ^2.2.2
       c8: ^7.12.0
       histoire: ^0.11.7
       jsdom: ^20.0.2
@@ -103,7 +103,7 @@ importers:
       '@myturborepo/tsconfig': link:../tsconfig
       '@vitejs/plugin-vue': 3.2.0
       '@vitest/coverage-c8': 0.25.1_jsdom@20.0.2
-      '@vue/test-utils': 2.2.1
+      '@vue/test-utils': 2.2.2
       c8: 7.12.0
       histoire: 0.11.7
       jsdom: 20.0.2
@@ -2786,8 +2786,8 @@ packages:
     resolution: {integrity: sha512-Ewzq5Yhimg7pSztDV+RH1UDKBzmtqieXQlpTVm2AwraoRL/Rks96mvd8Vgi7Lj+h+TH8dv7mXD3FRZR3TUvbSg==}
     dev: true
 
-  /@vue/test-utils/2.2.1:
-    resolution: {integrity: sha512-AkLt24wnnxedJ3NX090JYiueog184QqlR5TVNZM+lggCrK8XjeuPr274okaLqDmiRgp4XVCaGa07KqKLGQbsMQ==}
+  /@vue/test-utils/2.2.2:
+    resolution: {integrity: sha512-Eof2ic+Erv7wx2mrYVxBwQtAmMdCU6nywajcFKre0T3d8j6flej1IAKlEzJTn+/6IHvYPxY2hYOsOfXRXI90Jg==}
     peerDependencies:
       vue: ^3.0.1
     dev: true
