@@ -21,7 +21,7 @@ importers:
       autoprefixer: ^10.4.13
       postcss: ^8.4.19
       tailwindcss: ^3.2.4
-      vitepress: 1.0.0-alpha.28
+      vitepress: 1.0.0-alpha.29
       vue: ^3.2.45
     devDependencies:
       '@myturborepo/tailwind-preset': link:../../packages/tailwind-preset
@@ -29,7 +29,7 @@ importers:
       autoprefixer: 10.4.13_postcss@8.4.19
       postcss: 8.4.19
       tailwindcss: 3.2.4_postcss@8.4.19
-      vitepress: 1.0.0-alpha.28
+      vitepress: 1.0.0-alpha.29
       vue: 3.2.45
 
   apps/web:
@@ -9683,8 +9683,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitepress/1.0.0-alpha.28:
-    resolution: {integrity: sha512-pvbLssDMgLUN1terajmPlFBxHSDGO4DqwexKbjFyr7LeELerVuwGrG6F2J1hxmwOlbpLd1kHXEDqGm9JX/kTDQ==}
+  /vitepress/1.0.0-alpha.29:
+    resolution: {integrity: sha512-oaRaeMLcN9M3Bxz97fFVF6Gzm3Aqtb0CijTt5TOW0XPzNPuKA0YpFnsmS97gdKmA+VztM6itRJ8K7JJuU0VS3g==}
     hasBin: true
     dependencies:
       '@docsearch/css': 3.3.0
