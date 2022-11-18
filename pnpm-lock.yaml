@@ -16,7 +16,7 @@ importers:
 
   apps/api:
     specifiers:
-      '@adonisjs/assembler': ^5.9.3
+      '@adonisjs/assembler': ^5.9.4
       '@adonisjs/core': ^5.8.9
       '@adonisjs/repl': ^3.1.11
       '@japa/preset-adonis': ^1.2.0
@@ -39,7 +39,7 @@ importers:
       reflect-metadata: 0.1.13
       source-map-support: 0.5.21
     devDependencies:
-      '@adonisjs/assembler': 5.9.3_@adonisjs+core@5.8.9
+      '@adonisjs/assembler': 5.9.4_@adonisjs+core@5.8.9
       '@japa/preset-adonis': 1.2.0_w66r2kpqde77tyfqw5433jesk4
       '@japa/runner': 2.2.2
       '@myturborepo/tsconfig': link:../../packages/tsconfig
@@ -138,8 +138,8 @@ packages:
       '@poppinss/utils': 4.0.4
       semver: 7.3.8
 
-  /@adonisjs/assembler/5.9.3_@adonisjs+core@5.8.9:
-    resolution: {integrity: sha512-v7XO55ui6PxQ0fifAOjTDazzM/1iYOf5YUMmgwk/kKK4+iatCvOa7JgYKoXJxhubFwNN1IthY3zCqiiZJES7GA==}
+  /@adonisjs/assembler/5.9.4_@adonisjs+core@5.8.9:
+    resolution: {integrity: sha512-+y6IpRqmSAsDFp/QYnznLvOBXGoOU6YRdzeRIuXXRCINpdJG8n4WAX1Yx8gFxFwasMYkP+wTrXZ+CYLnvIg3Ww==}
     peerDependencies:
       '@adonisjs/core': ^5.1.0
     dependencies:
@@ -148,7 +148,7 @@ packages:
       '@adonisjs/env': 3.0.9
       '@adonisjs/ioc-transformer': 2.3.4
       '@adonisjs/require-ts': 2.0.13
-      '@adonisjs/sink': 5.4.1_dcp26hjfxbju2etdd3namxtgxu
+      '@adonisjs/sink': 5.4.2_dcp26hjfxbju2etdd3namxtgxu
       '@poppinss/chokidar-ts': 3.3.5
       '@poppinss/cliui': 3.0.5
       '@poppinss/utils': 5.0.0
@@ -344,8 +344,8 @@ packages:
       - supports-color
     dev: true
 
-  /@adonisjs/sink/5.4.1_dcp26hjfxbju2etdd3namxtgxu:
-    resolution: {integrity: sha512-SQDlMSNAgieuziyFMORZJ9x4W/esbBN4/NCh10cab4ZZtQDsseZs4Rer3ZL6PWjlt36mwQ2befdajV598S3NDw==}
+  /@adonisjs/sink/5.4.2_dcp26hjfxbju2etdd3namxtgxu:
+    resolution: {integrity: sha512-rPrB+tb3OfKaGpdF0zejlZOJSjqH53DCG9z939ylECosTLZ+i0kFD6g0Z+1gQ9KSe5jMtygj9Rw525pqBg8HSA==}
     peerDependencies:
       '@adonisjs/application': ^5.0.0
     dependencies:
