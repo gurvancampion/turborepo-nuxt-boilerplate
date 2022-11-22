@@ -16,7 +16,7 @@ importers:
 
   apps/docs:
     specifiers:
-      '@iconify-json/mdi': ^1.1.35
+      '@iconify-json/mdi': ^1.1.36
       '@myturborepo/ui': workspace:*
       '@myturborepo/vuetify-config': workspace:*
       unocss: ^0.46.5
@@ -24,7 +24,7 @@ importers:
       vitepress: 1.0.0-alpha.29
       vue: ^3.2.45
     devDependencies:
-      '@iconify-json/mdi': 1.1.35
+      '@iconify-json/mdi': 1.1.36
       '@myturborepo/ui': link:../../packages/ui
       '@myturborepo/vuetify-config': link:../../packages/vuetify-config
       unocss: 0.46.5
@@ -34,7 +34,7 @@ importers:
 
   apps/web:
     specifiers:
-      '@iconify-json/mdi': ^1.1.35
+      '@iconify-json/mdi': ^1.1.36
       '@myturborepo/common': workspace:*
       '@myturborepo/tsconfig': workspace:*
       '@myturborepo/ui': workspace:*
@@ -45,7 +45,7 @@ importers:
     dependencies:
       '@myturborepo/common': link:../../packages/common
     devDependencies:
-      '@iconify-json/mdi': 1.1.35
+      '@iconify-json/mdi': 1.1.36
       '@myturborepo/tsconfig': link:../../packages/tsconfig
       '@myturborepo/ui': link:../../packages/ui
       '@myturborepo/vuetify-config': link:../../packages/vuetify-config
@@ -80,12 +80,12 @@ importers:
   packages/ui:
     specifiers:
       '@histoire/plugin-vue': ^0.11.7
-      '@iconify-json/mdi': ^1.1.35
+      '@iconify-json/mdi': ^1.1.36
       '@mdi/js': ^7.0.96
       '@myturborepo/tsconfig': workspace:*
       '@myturborepo/vuetify-config': workspace:*
       '@vitejs/plugin-vue': ^3.2.0
-      '@vitest/coverage-c8': ^0.25.2
+      '@vitest/coverage-c8': ^0.25.3
       '@vue/test-utils': ^2.2.4
       c8: ^7.12.0
       histoire: ^0.11.7
@@ -93,15 +93,15 @@ importers:
       unocss: ^0.46.5
       vite: ^3.2.4
       vite-plugin-vuetify: ^1.0.0
-      vitest: ^0.25.2
+      vitest: ^0.25.3
     devDependencies:
       '@histoire/plugin-vue': 0.11.7_histoire@0.11.7+vite@3.2.4
-      '@iconify-json/mdi': 1.1.35
+      '@iconify-json/mdi': 1.1.36
       '@mdi/js': 7.0.96
       '@myturborepo/tsconfig': link:../tsconfig
       '@myturborepo/vuetify-config': link:../vuetify-config
       '@vitejs/plugin-vue': 3.2.0_vite@3.2.4
-      '@vitest/coverage-c8': 0.25.2_jsdom@20.0.3
+      '@vitest/coverage-c8': 0.25.3_jsdom@20.0.3
       '@vue/test-utils': 2.2.4
       c8: 7.12.0
       histoire: 0.11.7_vite@3.2.4
@@ -109,13 +109,13 @@ importers:
       unocss: 0.46.5_vite@3.2.4
       vite: 3.2.4
       vite-plugin-vuetify: 1.0.0_vite@3.2.4
-      vitest: 0.25.2_jsdom@20.0.3
+      vitest: 0.25.3_jsdom@20.0.3
 
   packages/vuetify-config:
     specifiers:
-      vuetify: 3.0.1
+      vuetify: 3.0.2
     dependencies:
-      vuetify: 3.0.1
+      vuetify: 3.0.2
 
 packages:
 
@@ -866,8 +866,8 @@ packages:
     resolution: {integrity: sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==}
     dev: true
 
-  /@iconify-json/mdi/1.1.35:
-    resolution: {integrity: sha512-xphV75eI+isNlqi5Ro0k4RDroNkUswQtlHszVcnzuJvSlrg11i+lBqULVXtF95qn4cOsbGMHwkbe3W7phBZI7A==}
+  /@iconify-json/mdi/1.1.36:
+    resolution: {integrity: sha512-3aWCVjDIseO8COo8zPkmxOZUFjdWsvTQQnk6zVrOaJh2K8oKuBznw10FSJZgQM7qAn6S54/oejyqkWfODRZV1Q==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true
@@ -2146,11 +2146,11 @@ packages:
       vue: 3.2.45
     dev: true
 
-  /@vitest/coverage-c8/0.25.2_jsdom@20.0.3:
-    resolution: {integrity: sha512-qKsiUJh3bjbB5Q229CbxEWCqiDBwvIrcZ9OOuQdMEC0pce3/LlTUK3+K3hd7WqAYEbbiqXfC5MVMKHZkV82PgA==}
+  /@vitest/coverage-c8/0.25.3_jsdom@20.0.3:
+    resolution: {integrity: sha512-+tmrB3E7pZTSM+aWKzLk0FpyyaQOoRQf0594hHp+E3Kk0tiFONiEFYf7+9a1Z+C2ffU/0w6KvyBjpNPdashMrg==}
     dependencies:
       c8: 7.12.0
-      vitest: 0.25.2_jsdom@20.0.3
+      vitest: 0.25.3_jsdom@20.0.3
     transitivePeerDependencies:
       - '@edge-runtime/vm'
       - '@vitest/browser'
@@ -2375,12 +2375,6 @@ packages:
   /acorn-walk/8.2.0:
     resolution: {integrity: sha512-k+iyHEuPgSw6SbuDpGQM+06HQUa04DZ3o+F6CSzXMvvI5KMvnaEqXe+YVe555R9nn6GPt404fos4wcgpw12SDA==}
     engines: {node: '>=0.4.0'}
-    dev: true
-
-  /acorn/8.8.0:
-    resolution: {integrity: sha512-QOxyigPVrpZ2GXT+PFyZTl6TtOFc5egxHIP9IlQ+RbupQuX4RkT/Bee4/kQuC02Xkzg84JcT7oLYtDIQxp+v7w==}
-    engines: {node: '>=0.4.0'}
-    hasBin: true
     dev: true
 
   /acorn/8.8.1:
@@ -9971,8 +9965,8 @@ packages:
       - terser
     dev: true
 
-  /vitest/0.25.2_jsdom@20.0.3:
-    resolution: {integrity: sha512-qqkzfzglEFbQY7IGkgSJkdOhoqHjwAao/OrphnHboeYHC5JzsVFoLCaB2lnAy8krhj7sbrFTVRApzpkTOeuDWQ==}
+  /vitest/0.25.3_jsdom@20.0.3:
+    resolution: {integrity: sha512-/UzHfXIKsELZhL7OaM2xFlRF8HRZgAHtPctacvNK8H4vOcbJJAMEgbWNGSAK7Y9b1NBe5SeM7VTuz2RsTHFJJA==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
     peerDependencies:
@@ -9996,7 +9990,7 @@ packages:
       '@types/chai': 4.3.3
       '@types/chai-subset': 1.3.3
       '@types/node': 18.8.3
-      acorn: 8.8.0
+      acorn: 8.8.1
       acorn-walk: 8.2.0
       chai: 4.3.6
       debug: 4.3.4
@@ -10140,8 +10134,8 @@ packages:
       '@vue/shared': 3.2.45
     dev: true
 
-  /vuetify/3.0.1:
-    resolution: {integrity: sha512-Vl4wYB4mCm6GFK6Q9KZDK+HM3YKI7md7BoUPwbgqZj4bkofjQ/8NVSRQQpTcwk0YoQrgw6qj0QaOtP5zitkS1Q==}
+  /vuetify/3.0.2:
+    resolution: {integrity: sha512-d+lb8DHUrrn9GnKaZW1dEApjIEamUcZn1HxomiQ0+y8t+jKjktpruo16AvAjpEHhAcCeWZ5RuK/S9HdT6z68Uw==}
     engines: {node: ^12.20 || >=14.13}
     peerDependencies:
       vite-plugin-vuetify: ^1.0.0-alpha.12
