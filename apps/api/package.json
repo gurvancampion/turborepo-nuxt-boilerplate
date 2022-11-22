@@ -32,7 +32,7 @@
     "youch-terminal": "^2.1.5"
   },
   "dependencies": {
-    "@adonisjs/core": "^5.8.9",
+    "@adonisjs/core": "^5.9.0",
     "@adonisjs/repl": "^3.1.11",
     "proxy-addr": "^2.0.7",
     "reflect-metadata": "^0.1.13",
