@@ -15,7 +15,7 @@
     "nuxt": "3.0.0",
     "@myturborepo/tsconfig": "workspace:*",
     "@myturborepo/ui": "workspace:*",
-    "@unocss/nuxt": "^0.47.1"
+    "@unocss/nuxt": "^0.47.3"
   },
   "dependencies": {
     "@myturborepo/common": "workspace:*"
