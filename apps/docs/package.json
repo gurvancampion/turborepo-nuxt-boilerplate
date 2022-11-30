@@ -11,7 +11,7 @@
     "@iconify-json/mdi": "^1.1.36",
     "@myturborepo/ui": "workspace:*",
     "@myturborepo/vuetify-config": "workspace:*",
-    "unocss": "^0.47.1",
+    "unocss": "^0.47.3",
     "vite-plugin-vuetify": "^1.0.0",
     "vitepress": "1.0.0-alpha.29",
     "vue": "^3.2.45"
