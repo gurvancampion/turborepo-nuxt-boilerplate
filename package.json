@@ -16,7 +16,7 @@
   "devDependencies": {
     "@myturborepo/eslint-config-custom": "workspace:*",
     "@release-it/conventional-changelog": "^5.1.1",
-    "release-it": "^15.5.0",
+    "release-it": "^15.5.1",
     "turbo": "latest"
   },
   "engines": {
