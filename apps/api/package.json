@@ -24,7 +24,7 @@
     "@japa/preset-adonis": "^1.2.0",
     "@japa/runner": "^2.2.2",
     "adonis-preset-ts": "^2.1.0",
-    "eslint": "^8.28.0",
+    "eslint": "^8.29.0",
     "eslint-plugin-adonis": "^2.1.1",
     "pino-pretty": "^9.1.1",
     "typescript": "~4.9",
