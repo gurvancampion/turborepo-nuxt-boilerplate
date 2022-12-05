@@ -82,7 +82,7 @@ importers:
       '@myturborepo/tailwind-preset': workspace:*
       '@myturborepo/tsconfig': workspace:*
       '@vitejs/plugin-vue': ^3.2.0
-      '@vitest/coverage-c8': ^0.25.3
+      '@vitest/coverage-c8': ^0.25.4
       '@vue/test-utils': ^2.2.6
       autoprefixer: ^10.4.13
       c8: ^7.12.0
@@ -90,13 +90,13 @@ importers:
       jsdom: ^20.0.3
       postcss: ^8.4.19
       tailwindcss: ^3.2.4
-      vitest: ^0.25.3
+      vitest: ^0.25.4
     devDependencies:
       '@histoire/plugin-vue': 0.11.9_histoire@0.11.9
       '@myturborepo/tailwind-preset': link:../tailwind-preset
       '@myturborepo/tsconfig': link:../tsconfig
       '@vitejs/plugin-vue': 3.2.0
-      '@vitest/coverage-c8': 0.25.3_jsdom@20.0.3
+      '@vitest/coverage-c8': 0.25.4_jsdom@20.0.3
       '@vue/test-utils': 2.2.6
       autoprefixer: 10.4.13_postcss@8.4.19
       c8: 7.12.0
@@ -104,7 +104,7 @@ importers:
       jsdom: 20.0.3
       postcss: 8.4.19
       tailwindcss: 3.2.4_postcss@8.4.19
-      vitest: 0.25.3_jsdom@20.0.3
+      vitest: 0.25.4_jsdom@20.0.3
 
 packages:
 
@@ -1837,11 +1837,11 @@ packages:
       vue: 3.2.45
     dev: true
 
-  /@vitest/coverage-c8/0.25.3_jsdom@20.0.3:
-    resolution: {integrity: sha512-+tmrB3E7pZTSM+aWKzLk0FpyyaQOoRQf0594hHp+E3Kk0tiFONiEFYf7+9a1Z+C2ffU/0w6KvyBjpNPdashMrg==}
+  /@vitest/coverage-c8/0.25.4_jsdom@20.0.3:
+    resolution: {integrity: sha512-3ozqZUr3x8woBCBXJRzt1P8DRGKsIxajfzRu3ySKJE0bCkIl2hofzHYzkHBZafhfhMOt+hR6L395Io7gyMmpUQ==}
     dependencies:
       c8: 7.12.0
-      vitest: 0.25.3_jsdom@20.0.3
+      vitest: 0.25.4_jsdom@20.0.3
     transitivePeerDependencies:
       - '@edge-runtime/vm'
       - '@vitest/browser'
@@ -8675,12 +8675,6 @@ packages:
     engines: {node: '>=8'}
     dev: false
 
-  /strip-literal/0.4.2:
-    resolution: {integrity: sha512-pv48ybn4iE1O9RLgCAN0iU4Xv7RlBTiit6DKmMiErbs9x1wH6vXBs45tWc0H5wUIF6TLTrKweqkmYF/iraQKNw==}
-    dependencies:
-      acorn: 8.8.1
-    dev: true
-
   /strip-literal/1.0.0:
     resolution: {integrity: sha512-5o4LsH1lzBzO9UFH63AJ2ad2/S2AVx6NtjOcaz+VTT2h1RiRvbipW72z8M/lxEhcPHDBQwpDrnTF7sXy/7OwCQ==}
     dependencies:
@@ -9573,8 +9567,8 @@ packages:
       - terser
     dev: true
 
-  /vitest/0.25.3_jsdom@20.0.3:
-    resolution: {integrity: sha512-/UzHfXIKsELZhL7OaM2xFlRF8HRZgAHtPctacvNK8H4vOcbJJAMEgbWNGSAK7Y9b1NBe5SeM7VTuz2RsTHFJJA==}
+  /vitest/0.25.4_jsdom@20.0.3:
+    resolution: {integrity: sha512-v/qoSEYPrf8qa1CbKIKYK+1GGmPPEJyXFbkuD6jhh080cfNBsuUDAdMu6hV2h9Uv34EMiUrVETL/wB+EHxFtbA==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
     peerDependencies:
@@ -9605,7 +9599,7 @@ packages:
       jsdom: 20.0.3
       local-pkg: 0.4.2
       source-map: 0.6.1
-      strip-literal: 0.4.2
+      strip-literal: 1.0.0
       tinybench: 2.3.1
       tinypool: 0.3.0
       tinyspy: 1.0.2
