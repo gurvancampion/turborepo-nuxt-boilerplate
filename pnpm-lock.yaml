@@ -24,7 +24,7 @@ importers:
       postcss: ^8.4.19
       tailwindcss: ^3.2.4
       unplugin-vue-components: ^0.22.11
-      vitepress: 1.0.0-alpha.29
+      vitepress: 1.0.0-alpha.30
       vue: ^3.2.45
     devDependencies:
       '@headlessui/vue': 1.7.4_vue@3.2.45
@@ -35,7 +35,7 @@ importers:
       postcss: 8.4.19
       tailwindcss: 3.2.4_postcss@8.4.19
       unplugin-vue-components: 0.22.11_vue@3.2.45
-      vitepress: 1.0.0-alpha.29
+      vitepress: 1.0.0-alpha.30
       vue: 3.2.45
 
   apps/web:
@@ -97,7 +97,7 @@ importers:
       '@myturborepo/tsconfig': workspace:*
       '@vitejs/plugin-vue': ^3.2.0
       '@vitest/coverage-c8': ^0.25.3
-      '@vue/test-utils': ^2.2.5
+      '@vue/test-utils': ^2.2.6
       autoprefixer: ^10.4.13
       c8: ^7.12.0
       histoire: ^0.11.9
@@ -114,7 +114,7 @@ importers:
       '@myturborepo/tsconfig': link:../tsconfig
       '@vitejs/plugin-vue': 3.2.0
       '@vitest/coverage-c8': 0.25.3_jsdom@20.0.3
-      '@vue/test-utils': 2.2.5
+      '@vue/test-utils': 2.2.6
       autoprefixer: 10.4.13_postcss@8.4.19
       c8: 7.12.0
       histoire: 0.11.9
@@ -1939,17 +1939,6 @@ packages:
       vue: ^3.2.25
     dev: true
 
-  /@vitejs/plugin-vue/3.2.0_vite@3.2.3+vue@3.2.45:
-    resolution: {integrity: sha512-E0tnaL4fr+qkdCNxJ+Xd0yM31UwMkQje76fsDVBBUCoGOUPexu2VDUYHL8P4CwV+zMvWw6nlRw19OnRKmYAJpw==}
-    engines: {node: ^14.18.0 || >=16.0.0}
-    peerDependencies:
-      vite: ^3.0.0
-      vue: ^3.2.25
-    dependencies:
-      vite: 3.2.3
-      vue: 3.2.45
-    dev: true
-
   /@vitejs/plugin-vue/3.2.0_vite@3.2.4+vue@3.2.45:
     resolution: {integrity: sha512-E0tnaL4fr+qkdCNxJ+Xd0yM31UwMkQje76fsDVBBUCoGOUPexu2VDUYHL8P4CwV+zMvWw6nlRw19OnRKmYAJpw==}
     engines: {node: ^14.18.0 || >=16.0.0}
@@ -2088,8 +2077,8 @@ packages:
     resolution: {integrity: sha512-Ewzq5Yhimg7pSztDV+RH1UDKBzmtqieXQlpTVm2AwraoRL/Rks96mvd8Vgi7Lj+h+TH8dv7mXD3FRZR3TUvbSg==}
     dev: true
 
-  /@vue/test-utils/2.2.5:
-    resolution: {integrity: sha512-iKEbu/VRO53qXJlAupL7d4v+SdaypQuRDxwGO3dgYT7biPh+gJsa+0Z9dnaHIE752nPc/ueAoNd6KAKx6fD+Tw==}
+  /@vue/test-utils/2.2.6:
+    resolution: {integrity: sha512-64zHtJZdG7V/U2L0j/z3Pt5bSygccI3xs+Kl7LB73AZK4MQ8WONJhqDQPK8leUFFA9CmmoJygeky7zcl2hX10A==}
     peerDependencies:
       vue: ^3.0.1
     dev: true
@@ -9726,39 +9715,6 @@ packages:
       vscode-uri: 3.0.6
     dev: true
 
-  /vite/3.2.3:
-    resolution: {integrity: sha512-h8jl1TZ76eGs3o2dIBSsvXDLb1m/Ec1iej8ZMdz+PsaFUsftZeWe2CZOI3qogEsMNaywc17gu0q6cQDzh/weCQ==}
-    engines: {node: ^14.18.0 || >=16.0.0}
-    hasBin: true
-    peerDependencies:
-      '@types/node': '>= 14'
-      less: '*'
-      sass: '*'
-      stylus: '*'
-      sugarss: '*'
-      terser: ^5.4.0
-    peerDependenciesMeta:
-      '@types/node':
-        optional: true
-      less:
-        optional: true
-      sass:
-        optional: true
-      stylus:
-        optional: true
-      sugarss:
-        optional: true
-      terser:
-        optional: true
-    dependencies:
-      esbuild: 0.15.14
-      postcss: 8.4.19
-      resolve: 1.22.1
-      rollup: 2.79.1
-    optionalDependencies:
-      fsevents: 2.3.2
-    dev: true
-
   /vite/3.2.4:
     resolution: {integrity: sha512-Z2X6SRAffOUYTa+sLy3NQ7nlHFU100xwanq1WDwqaiFiCe+25zdxP1TfCS5ojPV2oDDcXudHIoPnI1Z/66B7Yw==}
     engines: {node: ^14.18.0 || >=16.0.0}
@@ -9826,18 +9782,18 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitepress/1.0.0-alpha.29:
-    resolution: {integrity: sha512-oaRaeMLcN9M3Bxz97fFVF6Gzm3Aqtb0CijTt5TOW0XPzNPuKA0YpFnsmS97gdKmA+VztM6itRJ8K7JJuU0VS3g==}
+  /vitepress/1.0.0-alpha.30:
+    resolution: {integrity: sha512-CjIqKkGAuvoP2IWBFIbYWyiMSHSGYvjPy7eDkdftawguv5a8w4AjM95VV4Lhyacev4AFcgK23FViibRluBMePw==}
     hasBin: true
     dependencies:
       '@docsearch/css': 3.3.0
       '@docsearch/js': 3.3.0
-      '@vitejs/plugin-vue': 3.2.0_vite@3.2.3+vue@3.2.45
+      '@vitejs/plugin-vue': 3.2.0_vite@3.2.4+vue@3.2.45
       '@vue/devtools-api': 6.4.5
       '@vueuse/core': 9.4.0_vue@3.2.45
       body-scroll-lock: 4.0.0-beta.0
       shiki: 0.11.1
-      vite: 3.2.3
+      vite: 3.2.4
       vue: 3.2.45
     transitivePeerDependencies:
       - '@algolia/client-search'
