@@ -13,7 +13,7 @@
     "@myturborepo/vuetify-config": "workspace:*",
     "unocss": "^0.47.5",
     "vite-plugin-vuetify": "^1.0.0",
-    "vitepress": "1.0.0-alpha.29",
+    "vitepress": "1.0.0-alpha.30",
     "vue": "^3.2.45"
   }
 }
