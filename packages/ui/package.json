@@ -16,7 +16,7 @@
     "@myturborepo/tsconfig": "workspace:*",
     "@myturborepo/vuetify-config": "workspace:*",
     "@vitejs/plugin-vue": "^3.2.0",
-    "@vitest/coverage-c8": "^0.25.4",
+    "@vitest/coverage-c8": "^0.25.5",
     "@vue/test-utils": "^2.2.6",
     "c8": "^7.12.0",
     "histoire": "^0.11.9",
@@ -24,6 +24,6 @@
     "unocss": "^0.47.5",
     "vite": "^3.2.5",
     "vite-plugin-vuetify": "^1.0.0",
-    "vitest": "^0.25.4"
+    "vitest": "^0.25.5"
   }
 }
