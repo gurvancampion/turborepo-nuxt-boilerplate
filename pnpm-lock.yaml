@@ -16,7 +16,7 @@ importers:
 
   apps/docs:
     specifiers:
-      '@headlessui/vue': ^1.7.4
+      '@headlessui/vue': ^1.7.5
       '@heroicons/vue': ^2.0.13
       '@myturborepo/tailwind-preset': workspace:*
       '@myturborepo/ui': workspace:*
@@ -27,7 +27,7 @@ importers:
       vitepress: 1.0.0-alpha.30
       vue: ^3.2.45
     devDependencies:
-      '@headlessui/vue': 1.7.4_vue@3.2.45
+      '@headlessui/vue': 1.7.5_vue@3.2.45
       '@heroicons/vue': 2.0.13_vue@3.2.45
       '@myturborepo/tailwind-preset': link:../../packages/tailwind-preset
       '@myturborepo/ui': link:../../packages/ui
@@ -40,7 +40,7 @@ importers:
 
   apps/web:
     specifiers:
-      '@headlessui/vue': ^1.7.4
+      '@headlessui/vue': ^1.7.5
       '@heroicons/vue': ^2.0.13
       '@myturborepo/tailwind-preset': workspace:*
       '@myturborepo/tsconfig': workspace:*
@@ -49,7 +49,7 @@ importers:
       nuxt: 3.0.0
       unplugin-vue-components: ^0.22.11
     devDependencies:
-      '@headlessui/vue': 1.7.4
+      '@headlessui/vue': 1.7.5
       '@heroicons/vue': 2.0.13
       '@myturborepo/tailwind-preset': link:../../packages/tailwind-preset
       '@myturborepo/tsconfig': link:../../packages/tsconfig
@@ -90,7 +90,7 @@ importers:
 
   packages/ui:
     specifiers:
-      '@headlessui/vue': ^1.7.4
+      '@headlessui/vue': ^1.7.5
       '@heroicons/vue': ^2.0.13
       '@histoire/plugin-vue': ^0.11.9
       '@myturborepo/tailwind-preset': workspace:*
@@ -107,7 +107,7 @@ importers:
       unplugin-vue-components: ^0.22.11
       vitest: ^0.25.6
     devDependencies:
-      '@headlessui/vue': 1.7.4
+      '@headlessui/vue': 1.7.5
       '@heroicons/vue': 2.0.13
       '@histoire/plugin-vue': 0.11.9_histoire@0.11.9
       '@myturborepo/tailwind-preset': link:../tailwind-preset
@@ -791,15 +791,15 @@ packages:
       - supports-color
     dev: false
 
-  /@headlessui/vue/1.7.4:
-    resolution: {integrity: sha512-QHRlKCK/zRpjSjhth7c2CZvx5eMDFflXauqRdRJgp1CwScx6PwCpWiwDsjQcYM4z8Yik2ZvyX8W4PFT2Wsqqyw==}
+  /@headlessui/vue/1.7.5:
+    resolution: {integrity: sha512-WjMvaOoxNUqbJO9UxdDJQmCtZZTsTUh4VbAekfhnbFsLqLrbvct27g1Q8gjEJjI4EWHiofIPCUs7mDsuKvwlHw==}
     engines: {node: '>=10'}
     peerDependencies:
       vue: ^3.2.0
     dev: true
 
-  /@headlessui/vue/1.7.4_vue@3.2.45:
-    resolution: {integrity: sha512-QHRlKCK/zRpjSjhth7c2CZvx5eMDFflXauqRdRJgp1CwScx6PwCpWiwDsjQcYM4z8Yik2ZvyX8W4PFT2Wsqqyw==}
+  /@headlessui/vue/1.7.5_vue@3.2.45:
+    resolution: {integrity: sha512-WjMvaOoxNUqbJO9UxdDJQmCtZZTsTUh4VbAekfhnbFsLqLrbvct27g1Q8gjEJjI4EWHiofIPCUs7mDsuKvwlHw==}
     engines: {node: '>=10'}
     peerDependencies:
       vue: ^3.2.0
