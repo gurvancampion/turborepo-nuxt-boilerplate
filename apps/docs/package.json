@@ -8,7 +8,7 @@
     "serve": "vitepress serve pages"
   },
   "devDependencies": {
-    "@headlessui/vue": "^1.7.4",
+    "@headlessui/vue": "^1.7.5",
     "@heroicons/vue": "^2.0.13",
     "@myturborepo/tailwind-preset": "workspace:*",
     "@myturborepo/ui": "workspace:*",
