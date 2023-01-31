@@ -10,18 +10,18 @@
     "test": "vitest run --coverage"
   },
   "devDependencies": {
-    "@histoire/plugin-vue": "^0.11.9",
+    "@histoire/plugin-vue": "^0.12.4",
     "@myturborepo/tailwind-preset": "workspace:*",
     "@myturborepo/tsconfig": "workspace:*",
     "@vitejs/plugin-vue": "^3.2.0",
-    "@vitest/coverage-c8": "^0.25.6",
-    "@vue/test-utils": "^2.2.6",
+    "@vitest/coverage-c8": "^0.28.3",
+    "@vue/test-utils": "^2.2.8",
     "autoprefixer": "^10.4.13",
     "c8": "^7.12.0",
-    "histoire": "^0.11.9",
+    "histoire": "^0.12.4",
     "jsdom": "^20.0.3",
-    "postcss": "^8.4.19",
+    "postcss": "^8.4.21",
     "tailwindcss": "^3.2.4",
-    "vitest": "^0.25.6"
+    "vitest": "^0.28.3"
   }
 }
