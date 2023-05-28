@@ -10,14 +10,14 @@
     "test": "vitest run --coverage"
   },
   "devDependencies": {
-    "@histoire/plugin-vue": "^0.12.4",
+    "@histoire/plugin-vue": "^0.16.1",
     "@myturborepo/tsconfig": "workspace:*",
-    "@vitejs/plugin-vue": "^4.0.0",
-    "@vitest/coverage-c8": "^0.28.3",
-    "@vue/test-utils": "^2.2.9",
-    "c8": "^7.12.0",
-    "histoire": "^0.12.4",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "@vitest/coverage-c8": "^0.31.1",
+    "@vue/test-utils": "^2.3.2",
+    "c8": "^7.13.0",
+    "histoire": "^0.16.1",
     "jsdom": "^20.0.3",
-    "vitest": "^0.28.3"
+    "vitest": "^0.31.1"
   }
 }
