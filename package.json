@@ -16,11 +16,11 @@
   "devDependencies": {
     "@myturborepo/eslint-config-custom": "workspace:*",
     "@release-it/conventional-changelog": "^5.1.1",
-    "release-it": "^15.6.0",
+    "release-it": "^15.10.3",
     "turbo": "latest"
   },
   "engines": {
-    "node": ">=v18.13.0"
+    "node": ">=v18.16.0"
   },
-  "packageManager": "pnpm@7.26.3"
+  "packageManager": "pnpm@7.32.5"
 }
