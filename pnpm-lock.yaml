@@ -85,7 +85,7 @@ importers:
       '@vitest/coverage-c8': ^0.31.1
       '@vue/test-utils': ^2.3.2
       autoprefixer: ^10.4.14
-      c8: ^7.13.0
+      c8: ^7.14.0
       histoire: ^0.16.1
       jsdom: ^20.0.3
       postcss: ^8.4.24
@@ -99,7 +99,7 @@ importers:
       '@vitest/coverage-c8': 0.31.1_vitest@0.31.1
       '@vue/test-utils': 2.3.2
       autoprefixer: 10.4.14_postcss@8.4.24
-      c8: 7.13.0
+      c8: 7.14.0
       histoire: 0.16.1
       jsdom: 20.0.3
       postcss: 8.4.24
@@ -2324,7 +2324,7 @@ packages:
       vitest: '>=0.30.0 <1'
     dependencies:
       '@ampproject/remapping': 2.2.1
-      c8: 7.13.0
+      c8: 7.14.0
       magic-string: 0.30.0
       picocolors: 1.0.0
       std-env: 3.3.3
@@ -3127,8 +3127,8 @@ packages:
       - supports-color
     dev: true
 
-  /c8/7.13.0:
-    resolution: {integrity: sha512-/NL4hQTv1gBL6J6ei80zu3IiTrmePDKXKXOTLpHvcIWZTVYQlDhVWjjWvkhICylE8EwwnMVzDZugCvdx0/DIIA==}
+  /c8/7.14.0:
+    resolution: {integrity: sha512-i04rtkkcNcCf7zsQcSv/T9EbUn4RXQ6mropeMcjFOsQXQ0iGLAr/xT6TImQg4+U9hmNpN9XdvPkjUL1IzbgxJw==}
     engines: {node: '>=10.12.0'}
     hasBin: true
     dependencies:
@@ -10194,7 +10194,7 @@ packages:
       is-yarn-global: 0.4.1
       latest-version: 7.0.0
       pupa: 3.1.0
-      semver: 7.5.0
+      semver: 7.5.1
       semver-diff: 4.0.0
       xdg-basedir: 5.1.0
     dev: true
