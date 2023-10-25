@@ -76,6 +76,14 @@ To build all apps and packages, run the following command:
 pnpm run build
 ```
 
+### Generate: SSG
+
+To statically generate this project:
+
+```
+pnpm run generate
+```
+
 ### Remote Caching
 
 Turborepo can use a technique known as [Remote Caching](https://turborepo.org/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
