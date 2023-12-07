@@ -12,7 +12,7 @@
   "devDependencies": {
     "@histoire/plugin-vue": "^0.12.4",
     "@myturborepo/tsconfig": "workspace:*",
-    "@vitejs/plugin-vue": "^3.2.0",
+    "@vitejs/plugin-vue": "^4.5.2",
     "@vitest/coverage-c8": "^0.28.3",
     "@vue/test-utils": "^2.2.9",
     "c8": "^7.12.0",
