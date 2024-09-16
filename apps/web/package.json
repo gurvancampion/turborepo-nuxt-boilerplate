@@ -12,7 +12,7 @@
     "lint:fix": "eslint --fix"
   },
   "devDependencies": {
-    "nuxt": "3.11.2",
+    "nuxt": "3.13.2",
     "@myturborepo/tsconfig": "workspace:*",
     "@myturborepo/ui": "workspace:*"
   }
