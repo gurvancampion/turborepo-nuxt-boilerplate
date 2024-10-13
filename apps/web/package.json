@@ -12,15 +12,15 @@
     "lint:fix": "eslint --fix"
   },
   "devDependencies": {
-    "@iconify-json/bx": "^1.1.4",
+    "@iconify-json/bx": "^1.2.1",
     "@myturborepo/tsconfig": "workspace:*",
     "@myturborepo/ui": "workspace:*",
-    "@unocss/nuxt": "^0.45.26",
+    "@unocss/nuxt": "^0.63.4",
     "nuxt": "3.0.0-rc.12",
-    "unplugin-vue-components": "^0.22.8"
+    "unplugin-vue-components": "^0.27.4"
   },
   "dependencies": {
     "@myturborepo/common": "workspace:*",
-    "anu-vue": "^0.9.1"
+    "anu-vue": "^0.15.2"
   }
 }

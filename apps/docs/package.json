@@ -8,15 +8,15 @@
     "serve": "vitepress serve pages"
   },
   "devDependencies": {
-    "@iconify-json/bx": "^1.1.4",
+    "@iconify-json/bx": "^1.2.1",
     "@myturborepo/ui": "workspace:*",
-    "@vitejs/plugin-vue-jsx": "^2.0.1",
-    "unocss": "^0.45.26",
-    "unplugin-vue-components": "^0.22.8",
-    "vitepress": "1.0.0-alpha.21",
-    "vue": "^3.2.41"
+    "@vitejs/plugin-vue-jsx": "^2.1.1",
+    "unocss": "^0.63.4",
+    "unplugin-vue-components": "^0.27.4",
+    "vitepress": "1.4.1",
+    "vue": "^3.5.12"
   },
   "dependencies": {
-    "anu-vue": "^0.9.1"
+    "anu-vue": "^0.15.2"
   }
 }
