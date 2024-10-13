@@ -4,8 +4,8 @@
   "main": "index.js",
   "private": true,
   "dependencies": {
-    "@antfu/eslint-config": "^0.39.3",
-    "eslint": "^8.41.0",
+    "@antfu/eslint-config": "^0.43.1",
+    "eslint": "^8.57.1",
     "eslint-config-turbo": "latest"
   },
   "devDependencies": {
