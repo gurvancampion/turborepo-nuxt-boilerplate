@@ -3,10 +3,10 @@
   "private": true,
   "devDependencies": {
     "@myturborepo/tsconfig": "workspace:*",
-    "typescript": "^4.7.4",
-    "unocss": "^0.45.26"
+    "typescript": "^4.9.5",
+    "unocss": "^0.63.4"
   },
   "dependencies": {
-    "anu-vue": "^0.9.1"
+    "anu-vue": "^0.15.2"
   }
 }
