@@ -9,7 +9,7 @@
     "eslint-config-turbo": "latest"
   },
   "devDependencies": {
-    "typescript": "^4.9.5"
+    "typescript": "^5.7.2"
   },
   "publishConfig": {
     "access": "public"
