@@ -21,7 +21,7 @@
     "turbo": "latest"
   },
   "engines": {
-    "node": ">=v18.16.0"
+    "node": ">=22.13.1"
   },
   "packageManager": "pnpm@7.32.5"
 }
