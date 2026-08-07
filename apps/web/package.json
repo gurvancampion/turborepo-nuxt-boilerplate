@@ -18,7 +18,7 @@
     "@myturborepo/tsconfig": "workspace:*",
     "@myturborepo/ui": "workspace:*",
     "@nuxtjs/tailwindcss": "^6.3.1",
-    "nuxt": "3.1.1",
+    "nuxt": "4.5.2",
     "unplugin-vue-components": "^0.23.0"
   }
 }
